@@ -2,7 +2,6 @@
 
 <template lang="pug">
 div
-  MainTitle
   ul
     li Значение 1
     li Значение 2
