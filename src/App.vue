@@ -1,14 +1,12 @@
-<script setup>
-import Title from './components/Title.vue';
-</script>
+<script setup></script>
 
 <template lang="pug">
 div
-  Title
+  MainTitle
   ul
     li Значение 1
     li Значение 2
     li Значение 3
 </template>
 
-<style></style>
+<style lang="scss"></style>
