@@ -1,7 +1,10 @@
 <template lang="pug">
 header.header
+  KannLogo(alt='Organisation\'s logo')
 </template>
 
-<script setup></script>
+<script setup>
+import KannLogo from './KannLogo.vue';
+</script>
 
 <style lang="scss"></style>
