@@ -1,5 +1,5 @@
 <template lang="pug">
-img(:src='logo' :class="props.class" :alt="alt")
+img(:src='logo', :class="props.class", :alt="alt")
 </template>
 
 <script setup>
