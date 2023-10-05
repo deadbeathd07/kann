@@ -1,7 +1,4 @@
-# Vue 3 + Vite
+# Vue 3 + Vite + PUG + SCSS + BEM
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-## Recommended IDE Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Цель
+Показать уровень владения шаблонизаторо PUG в связке с фреймворком Vue 3, а также осведомленности в БЭМ методологии. Формирование стилей с помощью SCSS препроцессора. Возможно в некоторых случаях будет осуществлен также и атомарный подход к оформлению стилей.
