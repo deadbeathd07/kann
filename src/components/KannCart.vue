@@ -1,5 +1,5 @@
 <template lang="pug">
-button.button.fs-15 Cart ({{ count.toString() }})
+button.button.button--basic-button.button--hover.fs-15 Cart ({{ count.toString() }})
 </template>
 
 <script setup>

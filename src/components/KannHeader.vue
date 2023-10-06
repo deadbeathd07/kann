@@ -4,7 +4,7 @@ header.header.header--hover
   KannNavigation(:menu='menu' class-list="header__list fs-15")
   KannLangSwitcher.header__switcher(:lang-arr='languages')
   KannSearch
-  a.link.fs-15(href="#") points de vente
+  a.link.link--basic-link.link--hover.fs-15(href="#") points de vente
   KannCart
 </template>
 
