@@ -1,7 +1,7 @@
 <template lang="pug">
 header.header
   KannLogo.header__logo(alt='Organisation\'s logo')
-  KannNavigation(:menu='menu' class-list="header__list")
+  KannNavigation(:menu='menu' class-list="header__list fs-15")
   KannLangSwitcher.header__switcher(:lang-arr='languages')
   KannSearch
   a.link(href="#") points de vente
