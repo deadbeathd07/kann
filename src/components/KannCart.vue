@@ -1,7 +1,9 @@
 <template lang="pug">
-button Cart
+button.button.fs-15 Cart ({{ count.toString() }})
 </template>
 
-<script setup></script>
+<script setup>
+const count = 0;
+</script>
 
 <style lang="scss"></style>
