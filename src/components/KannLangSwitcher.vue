@@ -14,10 +14,4 @@ const props = defineProps({
 });
 </script>
 
-<style lang="scss">
-.lang-switcher {
-	&__button {
-		position: relative;
-	}
-}
-</style>
+<style lang="scss"></style>
