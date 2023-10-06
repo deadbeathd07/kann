@@ -1,0 +1,11 @@
+.section {
+	margin: 0;
+	padding: 0;
+	&__title {
+		margin: 0;
+		padding: 0;
+	}
+	&__title--width-45 {
+		width: 45%;
+	}
+}
