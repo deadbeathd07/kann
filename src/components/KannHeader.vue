@@ -29,7 +29,6 @@ const languages = ['fr', 'en'];
 .header {
 	display: flex;
 	align-items: center;
-	margin-inline-end: 0;
 	padding: 20px 0;
 	& > * + * {
 		margin-right: 1rem;
