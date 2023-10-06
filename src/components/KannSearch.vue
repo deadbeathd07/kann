@@ -1,5 +1,5 @@
 <template lang="pug">
-button Search
+button.button.fs-15 Search
 </template>
 
 <script setup></script>
