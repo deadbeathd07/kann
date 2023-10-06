@@ -1,6 +1,6 @@
 <template lang="pug">
 div.lang-switcher
-  button(v-for='(button, i) in langArr', :key='i', type='button') {{ button }}
+  button.button(v-for='(button, i) in langArr', :key='i', type='button') {{ button }}
 </template>
 
 <script setup>
