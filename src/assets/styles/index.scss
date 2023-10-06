@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 @import url('./KannLink.scss');
+@import url('./KannButton.scss');
 
 :root {
 	font-family: 'Roboto', sans-serif;
+}
+
+.fs-15 {
+	font-size: 15px;
 }
