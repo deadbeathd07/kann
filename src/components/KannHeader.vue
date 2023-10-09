@@ -50,7 +50,7 @@ const languages = ['fr', 'en'];
 		}
 	}
 	&--hover:hover {
-		background-color: rgba($color: #ffffff, $alpha: 0.5);
+		background-color: rgba($color: #ffffff, $alpha: 1);
 	}
 }
 </style>
