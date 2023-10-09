@@ -1,11 +1,19 @@
 .section {
-	margin: 0;
-	padding: 0;
-	&__title {
-		margin: 0;
-		padding: 0;
-	}
+	padding: 0 1rem;
 	&__title--width-45 {
 		width: 45%;
+	}
+	&--bg-img {
+		background-image: url('../images/bg-full.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+	&--min-height-800 {
+		min-height: 800px;
+	}
+	&--content-center {
+		display: flex;
+		align-items: center;
 	}
 }
