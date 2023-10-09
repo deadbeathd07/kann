@@ -7,8 +7,11 @@ import KannFooter from './components/KannFooter.vue';
 div.layout__wrapper
   KannHeader(class="layout__header")
   main.layout__content
-    section.section.section--bg-img.section--min-height-800.section--content-center
-      h1.title.title--basic-color.section__title.section__title--width-45.fs-60.ls-12 Galta collection by SCMP Design Office
+    section.layout__section--position-top.section.section--bg-img.section--min-height-80.section--content-center
+      h1.title.title--basic-color.section__title.section__content--width-480.fs-60.ls-12 Galta collection by SCMP Design Office
+    section.section.section--content-center.section--content-space-between
+      h2.title.title--basic-color.section__title.section__content--width-480.fs-60.ls-12 Dans les coulisses de la fabrication Kann
+      img.section__img(src="./assets/images/img-1.jpg")
   KannFooter(class="layout__footer")
 </template>
 
@@ -21,12 +24,19 @@ div.layout__wrapper
 	}
 	&__header {
 		position: sticky;
+		top: 0;
 	}
 	&__content {
 		flex: 1 0 auto;
+		& > * + * {
+			margin-top: 115px;
+		}
 	}
 	&__footer {
 		flex: 0 0 auto;
+	}
+	&__section--position-top {
+		margin-top: -70px;
 	}
 }
 </style>
