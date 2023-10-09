@@ -1,5 +1,5 @@
 <template lang="pug">
-header.header.header--hover.header--sticky
+header.header.header--hover
   KannLogo.header__logo(alt='Organisation\'s logo')
   KannNavigation(:menu='menu' class-list="header__list fs-15")
   KannLangSwitcher.header__switcher(:lang-arr='languages')
@@ -29,7 +29,7 @@ const languages = ['fr', 'en'];
 .header {
 	display: flex;
 	align-items: center;
-	padding: 20px 0;
+	padding: 20px 1rem;
 	& > * + * {
 		margin-right: 1rem;
 		&:last-child {
@@ -50,9 +50,6 @@ const languages = ['fr', 'en'];
 	}
 	&--hover:hover {
 		background-color: rgba($color: #ffffff, $alpha: 0.5);
-	}
-	&--sticky {
-		position: sticky;
 	}
 }
 </style>
