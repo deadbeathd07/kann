@@ -30,6 +30,7 @@ const languages = ['fr', 'en'];
 	display: flex;
 	align-items: center;
 	padding: 20px 1rem;
+	transition: all 0.3s ease-out;
 	& > * + * {
 		margin-right: 1rem;
 		&:last-child {
