@@ -16,6 +16,9 @@ div.layout__wrapper
     section.section.section--content-center.section--content-space-between
       img.section__img.section__img--min-width-50.section__img--max-height-80(src="./assets/images/img-2.jpg")
       img.section__img.section__img--min-width-30.section__img--max-height-50(src="./assets/images/img-3.jpg")
+      div.section__link-wrapper
+        p.lowercase.fs-15 Cut / vert sablé
+        a.link.link--basic-link.link--hover.fs-15(href="#")  shop
   KannFooter(class="layout__footer")
 </template>
 
