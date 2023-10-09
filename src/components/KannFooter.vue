@@ -1,5 +1,5 @@
 <template lang="pug">
-footer.footer.footer--top-border
+footer.footer.footer--top-border(:class="props.class")
   section.footer__menu-section
     KannListSection(v-for='(listSection, i) in listSections', :key='i', :listSection='listSection' classList="footer__list fs-15")
   section.footer__copywriting.footer__copywriting--light.footer__copywriting--lowercase.fs-15
@@ -11,6 +11,12 @@ footer.footer.footer--top-border
 
 <script setup>
 import KannListSection from './KannListSection.vue';
+
+const props = defineProps({
+	class: {
+		type: String,
+	},
+});
 
 const listSections = [
 	{
