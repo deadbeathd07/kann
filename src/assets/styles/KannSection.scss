@@ -10,6 +10,10 @@
 		min-width: 60%;
 		max-height: 80vh;
 	}
+	&__link {
+		align-self: flex-end;
+		position: absolute;
+	}
 	&--bg-img {
 		background-image: url('../images/bg-full.jpg');
 		background-repeat: no-repeat;
