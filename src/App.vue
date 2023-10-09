@@ -12,7 +12,10 @@ div.layout__wrapper
     section.section.section--content-center.section--content-space-between
       a.section__link.link.link--basic-link.link--hover.fs-14(href="#") Lire l'article
       h2.title.title--basic-color.section__title.section__content--width-480.fs-60.ls-12 Dans les coulisses de la fabrication Kann
-      img.section__img(src="./assets/images/img-1.jpg")
+      img.section__img.section__img--min-width-60.section__img--max-height-80(src="./assets/images/img-1.jpg")
+    section.section.section--content-center.section--content-space-between
+      img.section__img.section__img--min-width-50.section__img--max-height-80(src="./assets/images/img-2.jpg")
+      img.section__img.section__img--min-width-30.section__img--max-height-50(src="./assets/images/img-3.jpg")
   KannFooter(class="layout__footer")
 </template>
 
