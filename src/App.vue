@@ -10,6 +10,7 @@ div.layout__wrapper
     section.layout__section--position-top.section.section--bg-img.section--min-height-80.section--content-center
       h1.title.title--basic-color.section__title.section__content--width-480.fs-60.ls-12 Galta collection by SCMP Design Office
     section.section.section--content-center.section--content-space-between
+      a.section__link.link.link--basic-link.link--hover.fs-14(href="#") Lire l'article
       h2.title.title--basic-color.section__title.section__content--width-480.fs-60.ls-12 Dans les coulisses de la fabrication Kann
       img.section__img(src="./assets/images/img-1.jpg")
   KannFooter(class="layout__footer")
