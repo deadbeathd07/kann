@@ -1,7 +1,14 @@
 .section {
+	display: flex;
 	padding: 0 1rem;
-	&__title--width-45 {
-		width: 45%;
+	&__content--width-480 {
+		max-width: 480px;
+	}
+	&__img {
+		display: inline-block;
+		object-fit: cover;
+		min-width: 60%;
+		max-height: 80vh;
 	}
 	&--bg-img {
 		background-image: url('../images/bg-full.jpg');
@@ -9,11 +16,13 @@
 		background-position: center;
 		background-size: cover;
 	}
-	&--min-height-800 {
-		min-height: 800px;
+	&--min-height-80 {
+		min-height: 80vh;
 	}
 	&--content-center {
-		display: flex;
 		align-items: center;
+	}
+	&--content-space-between {
+		justify-content: space-between;
 	}
 }
