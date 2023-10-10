@@ -7,28 +7,28 @@ import KannFooter from './components/KannFooter.vue';
 div.layout__wrapper
   KannHeader(class="layout__header")
   main.layout__content
-    section.layout__section--position-top-70.section.section--bg-img.section--min-height-80.section--content-center
+    section.layout__section--position-top-70.section.section--bg-img.section--min-height-80
       h1.title.title--basic-color.fs-60.ls-12 Galta collection by SCMP Design Office
-    section.section.section--content-center.section--content-space-between
+    section.section
       h2.title.title--basic-color.fs-60.ls-12 Dans les coulisses de la fabrication Kann
       img(src="./assets/images/img-1.jpg")
       a.link.link--basic-link.link--hover.fs-14(href="#") Lire l'article
-    section.section.section--content-center.section--content-space-between
+    section.section
       img(src="./assets/images/img-2.jpg")
       img(src="./assets/images/img-3.jpg")
       p.lowercase.fs-15 Cut / vert sablé
       a.link.link--basic-link.link--hover.fs-15(href="#") shop
-    section.section.section--content-center.section--content-space-between
+    section.section
       h2.title.title--basic-color.fs-60.ls-12 Linéaire et minimaliste, les bancs Galta dessinés par SCMP Design Office
       img(src='./assets/images/img-4.jpg')
       a.link.link--basic-link.link--hover.fs-14(href="#") Shop
-    section.section.section--content-center.section--content-space-between
+    section.section
       img(src="./assets/images/img-5.jpg")
       img(src="./assets/images/img-6.jpg")
       p.lowercase.fs-15 voir toutes les chaises
       p.lowercase.fs-15 tal / chêne noir
       a.link.link--basic-link.link--hover.fs-15(href="#") shop
-    section.section.section--content-center.section--content-space-between
+    section.section
       h2.title.title--basic-color.fs-60.ls-12 Des lignes horizontales s’encastrent dans le piètement, rendant apparente la technicité de l'assemblage.
       img(src='./assets/images/img-7.jpg')
       a.link.link--basic-link.link--hover.fs-14(href="#") Shop
