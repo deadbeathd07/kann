@@ -12,7 +12,7 @@ section.section.section--min-height-60.section--max-height-80
     img.section__img(src="images/img-2.jpg", alt="Image of furniture")
   figure.section__grid-element.section__grid-element--rows-center-3.section__grid-element--column-end-4.section__flex-element.section__flex-element--vertical.section__flex-element--relative
     img.section__img(src="images/img-3.jpg", alt="Image of furniture")
-  figcaption.lowercase.fs-15.lh-20 Cut / vert sablé
+    figcaption.lowercase.fs-15.lh-20 Cut / vert sablé
     a.section__link.section__link--pos-abs.section__link--b-0.section__link--end.link.link--basic-link.link--hover.fs-15.lh-20(href="#") shop
 section.section.section--min-height-60.section--max-height-75
   div.section__grid-element.section__grid-element--rows-full.section__grid-element--column-end-4.section__flex-element.section__flex-element--vertical.section__flex-element--relative.section__flex-element--jc-center
