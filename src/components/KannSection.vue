@@ -16,11 +16,23 @@
 		background-position: center;
 		background-size: cover;
 	}
+	&--min-height-60 {
+		min-height: 60vh;
+	}
 	&--min-height-70 {
 		min-height: 70vh;
 	}
+	&--max-height-70 {
+		max-height: 70vh;
+	}
+	&--max-height-75 {
+		max-height: 75vh;
+	}
 	&--max-height-90 {
 		max-height: 90vh;
+	}
+	&--max-height-100 {
+		max-height: 100vh;
 	}
 	&__grid-element {
 		&--rows-full {
