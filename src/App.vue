@@ -10,20 +10,23 @@ div.layout__wrapper
     section.layout__section--position-top-70.section.section--bg-img.section--min-height-70.section--max-height-90
       h1.title.title--basic-color.section__grid-element.section__grid-element--rows-full.section__grid-element--column-start-4.section__flex-element.section__flex-element--ai-center.fs-60.ls-12 Galta collection by SCMP Design Office
     section.section.section--min-height-70.section--max-height-90
-      div.section__grid-element.section__grid-element--rows-full.section__grid-element--column-start-4.section__flex-element.section__flex-element--vertical
-        h2.title.title--basic-color.fs-60.ls-12.mt-auto Dans les coulisses de la fabrication Kann
-        a.link.link--basic-link.link--hover.fs-14.mt-auto(href="#") Lire l'article
+      div.section__grid-element.section__grid-element--rows-full.section__grid-element--column-start-4.section__flex-element.section__flex-element--vertical.section__flex-element--relative.section__flex-element--jc-center
+        h2.title.title--basic-color.fs-60.ls-12 Dans les coulisses de la fabrication Kann
+        a.section__link.section__link--pos-abs.section__link--b-0.section__link--start.link.link--basic-link.link--hover.fs-14(href="#") Lire l'article
       figure.section__grid-element.section__grid-element--rows-full.section__grid-element--column-end-7
         img.section__img(src="./assets/images/img-1.jpg", alt="Image of furniture")
-    section.section
-      img(src="./assets/images/img-2.jpg", alt="Image of furniture")
-      img(src="./assets/images/img-3.jpg", alt="Image of furniture")
-      p.lowercase.fs-15 Cut / vert sablé
-      a.link.link--basic-link.link--hover.fs-15(href="#") shop
-    section.section
+    section.section.section--min-height-70.section--max-height-90
+      figure.section__grid-element.section__grid-element--rows-full.section__grid-element--column-start-6
+        img.section__img(src="./assets/images/img-2.jpg", alt="Image of furniture")
+      figure.section__grid-element.section__grid-element--rows-center-3.section__grid-element--column-end-4.section__flex-element.section__flex-element--vertical.section__flex-element--relative
+        img.section__img(src="./assets/images/img-3.jpg", alt="Image of furniture")
+        figcaption.lowercase.fs-15.lh-20 Cut / vert sablé
+        a.section__link.section__link--pos-abs.section__link--b-0.section__link--end.link.link--basic-link.link--hover.fs-15.lh-20(href="#") shop
+    section.section.section--min-height-70.section--max-height-90
       h2.title.title--basic-color.fs-60.ls-12 Linéaire et minimaliste, les bancs Galta dessinés par SCMP Design Office
-      img(src='./assets/images/img-4.jpg', alt="Image of furniture")
-      a.link.link--basic-link.link--hover.fs-14(href="#") Shop
+      figure
+        img(src='./assets/images/img-4.jpg', alt="Image of furniture")
+        a.link.link--basic-link.link--hover.fs-14(href="#") Shop
     section.section
       img(src="./assets/images/img-5.jpg", alt="Image of furniture")
       img(src="./assets/images/img-6.jpg", alt="Image of furniture")
