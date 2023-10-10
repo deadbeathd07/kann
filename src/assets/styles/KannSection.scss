@@ -1,9 +1,5 @@
 .section {
 	padding: 0 1rem;
-	&__link {
-		align-self: flex-end;
-		position: absolute;
-	}
 	&--bg-img {
 		background-image: url('../images/bg-full.jpg');
 		background-repeat: no-repeat;
