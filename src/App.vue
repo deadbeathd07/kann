@@ -10,14 +10,28 @@ div.layout__wrapper
     section.layout__section--position-top-70.section.section--bg-img.section--min-height-80.section--content-center
       h1.title.title--basic-color.section__title.fs-60.ls-12 Galta collection by SCMP Design Office
     section.section.section--content-center.section--content-space-between
-      a.section__link.link.link--basic-link.link--hover.fs-14(href="#") Lire l'article
       h2.title.title--basic-color.section__title.fs-60.ls-12 Dans les coulisses de la fabrication Kann
       img.section__img(src="./assets/images/img-1.jpg")
+      a.section__link.link.link--basic-link.link--hover.fs-14(href="#") Lire l'article
     section.section.section--content-center.section--content-space-between
       img.section__img(src="./assets/images/img-2.jpg")
       img.section__img(src="./assets/images/img-3.jpg")
       p.lowercase.fs-15 Cut / vert sablé
-      a.link.link--basic-link.link--hover.fs-15(href="#")  shop
+      a.link.link--basic-link.link--hover.fs-15(href="#") shop
+    section.section.section--content-center.section--content-space-between
+      h2.title.title--basic-color.section__title.fs-60.ls-12 Linéaire et minimaliste, les bancs Galta dessinés par SCMP Design Office
+      img.section__img(src='./assets/images/img-4.jpg')
+      a.section__link.link.link--basic-link.link--hover.fs-14(href="#") Shop
+    section.section.section--content-center.section--content-space-between
+      img.section__img(src="./assets/images/img-5.jpg")
+      img.section__img(src="./assets/images/img-6.jpg")
+      p.lowercase.fs-15 voir toutes les chaises
+      p.lowercase.fs-15 tal / chêne noir
+      a.link.link--basic-link.link--hover.fs-15(href="#") shop
+    section.section.section--content-center.section--content-space-between
+      h2.title.title--basic-color.section__title.fs-60.ls-12 Des lignes horizontales s’encastrent dans le piètement, rendant apparente la technicité de l'assemblage.
+      img.section__img(src='./assets/images/img-7.jpg')
+      a.section__link.link.link--basic-link.link--hover.fs-14(href="#") Shop
   KannFooter(class="layout__footer")
 </template>
 
@@ -39,6 +53,7 @@ div.layout__wrapper
 		}
 	}
 	&__footer {
+		margin-top: 115px;
 		flex: 0 0 auto;
 	}
 	&__section--position-top-70 {
