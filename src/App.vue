@@ -23,20 +23,25 @@ div.layout__wrapper
         figcaption.lowercase.fs-15.lh-20 Cut / vert sablé
         a.section__link.section__link--pos-abs.section__link--b-0.section__link--end.link.link--basic-link.link--hover.fs-15.lh-20(href="#") shop
     section.section.section--min-height-70.section--max-height-90
-      h2.title.title--basic-color.fs-60.ls-12 Linéaire et minimaliste, les bancs Galta dessinés par SCMP Design Office
-      figure
-        img(src='./assets/images/img-4.jpg', alt="Image of furniture")
-        a.link.link--basic-link.link--hover.fs-14(href="#") Shop
-    section.section
-      img(src="./assets/images/img-5.jpg", alt="Image of furniture")
-      img(src="./assets/images/img-6.jpg", alt="Image of furniture")
-      p.lowercase.fs-15 voir toutes les chaises
-      p.lowercase.fs-15 tal / chêne noir
-      a.link.link--basic-link.link--hover.fs-15(href="#") shop
-    section.section
-      h2.title.title--basic-color.fs-60.ls-12 Des lignes horizontales s’encastrent dans le piètement, rendant apparente la technicité de l'assemblage.
-      img(src='./assets/images/img-7.jpg', alt="Image of furniture")
-      a.link.link--basic-link.link--hover.fs-14(href="#") Shop
+      div.section__grid-element.section__grid-element--rows-full.section__grid-element--column-end-4.section__flex-element.section__flex-element--vertical.section__flex-element--relative.section__flex-element--jc-center
+        h2.title.title--basic-color.fs-60.ls-12 Linéaire et minimaliste, les bancs Galta dessinés par SCMP Design Office
+        a.section__link.section__link--pos-abs.section__link--b-0.section__link--start.link.link--basic-link.link--hover.fs-14(href="#") Shop
+      figure.section__grid-element.section__grid-element--rows-full.section__grid-element--column-start-7
+        img.section__img(src='./assets/images/img-4.jpg', alt="Image of furniture")
+    section.section.section--min-height-70.section--max-height-90
+      figure.section__grid-element.section__grid-element--rows-full.section__grid-element--column-start-6
+        img.section__img(src="./assets/images/img-5.jpg", alt="Image of furniture")
+        figcaption.lowercase.fs-15.lh-20 voir toutes les chaises
+      figure.section__grid-element.section__grid-element--rows-center-3.section__grid-element--column-end-4.section__flex-element.section__flex-element--vertical.section__flex-element--relative
+        img.section__img(src="./assets/images/img-6.jpg", alt="Image of furniture")
+        figcaption.lowercase.fs-15.lh-20 tal / chêne noir
+        a.section__link.section__link--pos-abs.section__link--b-0.section__link--end.link.link--basic-link.link--hover.fs-15.lh-20(href="#") shop
+    section.section.section--min-height-70.section--max-height-90
+      div.section__grid-element.section__grid-element--rows-full.section__grid-element--column-end-4.section__flex-element.section__flex-element--vertical.section__flex-element--relative.section__flex-element--jc-center
+        h2.title.title--basic-color.fs-60.ls-12 Des lignes horizontales s’encastrent dans le piètement, rendant apparente la technicité de l'assemblage.
+        a.section__link.section__link--pos-abs.section__link--b-0.section__link--start.link.link--basic-link.link--hover.fs-14(href="#") Shop
+      figure.section__grid-element.section__grid-element--rows-full.section__grid-element--column-start-7
+        img.section__img(src='./assets/images/img-7.jpg', alt="Image of furniture")
   KannFooter(class="layout__footer")
 </template>
 
