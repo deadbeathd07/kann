@@ -7,15 +7,15 @@ import KannFooter from './components/KannFooter.vue';
 div.layout__wrapper
   KannHeader(class="layout__header")
   main.layout__content
-    section.layout__section--position-top.section.section--bg-img.section--min-height-80.section--content-center
-      h1.title.title--basic-color.section__title.section__content--width-480.fs-60.ls-12 Galta collection by SCMP Design Office
+    section.layout__section--position-top-70.section.section--bg-img.section--min-height-80.section--content-center
+      h1.title.title--basic-color.section__column.section__column--column-4.section__title.fs-60.ls-12 Galta collection by SCMP Design Office
     section.section.section--content-center.section--content-space-between
       a.section__link.link.link--basic-link.link--hover.fs-14(href="#") Lire l'article
-      h2.title.title--basic-color.section__title.section__content--width-480.fs-60.ls-12 Dans les coulisses de la fabrication Kann
-      img.section__img.section__img--min-width-60.section__img--max-height-80(src="./assets/images/img-1.jpg")
+      h2.title.title--basic-color.section__column.section__column--column-4.section__title.fs-60.ls-12 Dans les coulisses de la fabrication Kann
+      img.section__img.section__column.section__column--column-end-7(src="./assets/images/img-1.jpg")
     section.section.section--content-center.section--content-space-between
-      img.section__img.section__img--min-width-50.section__img--max-height-80(src="./assets/images/img-2.jpg")
-      img.section__img.section__img--min-width-30.section__img--max-height-50(src="./assets/images/img-3.jpg")
+      img.section__img.section__column.section__column--column-8(src="./assets/images/img-2.jpg")
+      img.section__img.section__column.section__column--column-end-4(src="./assets/images/img-3.jpg")
       div.section__link-wrapper
         p.lowercase.fs-15 Cut / vert sablé
         a.link.link--basic-link.link--hover.fs-15(href="#")  shop
@@ -42,7 +42,7 @@ div.layout__wrapper
 	&__footer {
 		flex: 0 0 auto;
 	}
-	&__section--position-top {
+	&__section--position-top-70 {
 		margin-top: -70px;
 	}
 }
