@@ -28,8 +28,8 @@
 	&--max-height-75 {
 		max-height: 75vh;
 	}
-	&--max-height-90 {
-		max-height: 90vh;
+	&--max-height-80 {
+		max-height: 80vh;
 	}
 	&--max-height-100 {
 		max-height: 100vh;
