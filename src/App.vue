@@ -11,28 +11,28 @@ div.layout__wrapper
       h1.title.title--basic-color.section__grid-element.section__grid-element--rows-full.section__grid-element--column-start-4.section__flex-element.section__flex-element--ai-center.fs-60.ls-12 Galta collection by SCMP Design Office
     section.section.section--min-height-70.section--max-height-90
       div.section__grid-element.section__grid-element--rows-full.section__grid-element--column-start-4.section__flex-element.section__flex-element--vertical
-        h2title.title--basic-color.fs-60.ls-12.mt-auto Dans les coulisses de la fabrication Kann
+        h2.title.title--basic-color.fs-60.ls-12.mt-auto Dans les coulisses de la fabrication Kann
         a.link.link--basic-link.link--hover.fs-14.mt-auto(href="#") Lire l'article
       figure.section__grid-element.section__grid-element--rows-full.section__grid-element--column-end-7
-        img.section__img(src="./assets/images/img-1.jpg")
+        img.section__img(src="./assets/images/img-1.jpg", alt="Image of furniture")
     section.section
-      img(src="./assets/images/img-2.jpg")
-      img(src="./assets/images/img-3.jpg")
+      img(src="./assets/images/img-2.jpg", alt="Image of furniture")
+      img(src="./assets/images/img-3.jpg", alt="Image of furniture")
       p.lowercase.fs-15 Cut / vert sablé
       a.link.link--basic-link.link--hover.fs-15(href="#") shop
     section.section
       h2.title.title--basic-color.fs-60.ls-12 Linéaire et minimaliste, les bancs Galta dessinés par SCMP Design Office
-      img(src='./assets/images/img-4.jpg')
+      img(src='./assets/images/img-4.jpg', alt="Image of furniture")
       a.link.link--basic-link.link--hover.fs-14(href="#") Shop
     section.section
-      img(src="./assets/images/img-5.jpg")
-      img(src="./assets/images/img-6.jpg")
+      img(src="./assets/images/img-5.jpg", alt="Image of furniture")
+      img(src="./assets/images/img-6.jpg", alt="Image of furniture")
       p.lowercase.fs-15 voir toutes les chaises
       p.lowercase.fs-15 tal / chêne noir
       a.link.link--basic-link.link--hover.fs-15(href="#") shop
     section.section
       h2.title.title--basic-color.fs-60.ls-12 Des lignes horizontales s’encastrent dans le piètement, rendant apparente la technicité de l'assemblage.
-      img(src='./assets/images/img-7.jpg')
+      img(src='./assets/images/img-7.jpg', alt="Image of furniture")
       a.link.link--basic-link.link--hover.fs-14(href="#") Shop
   KannFooter(class="layout__footer")
 </template>
