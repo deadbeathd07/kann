@@ -77,8 +77,8 @@ const sectionsContent = [
 div.layout__wrapper
   KannHeader(class="layout__header")
   main.layout__content
-    div.intro
-      h1.intro__title.title.title--basic-color.fs-60 Galta collection by SCMP Design Office
+    div.layout__intro
+      h1.layout__title.title.title--basic-color.fs-60 Galta collection by SCMP Design Office
     KannSection(v-for="(section, i) in sectionsContent", :key="i", :content-obj="section")
   KannFooter(class="layout__footer")
 </template>
@@ -101,26 +101,26 @@ div.layout__wrapper
 			margin-top: 115px;
 		}
 	}
+	&__intro {
+		padding: 0 1rem;
+		background-image: url('images/bg-full.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		min-height: 70vh;
+		margin-top: -70px;
+		display: flex;
+		align-items: center;
+	}
+	&__title {
+		max-width: 40%;
+	}
 	&__footer {
 		margin-top: 115px;
 		flex: 0 0 auto;
 	}
 	&__section--position-top-70 {
 		margin-top: -70px;
-	}
-}
-.intro {
-	padding: 0 1rem;
-	background-image: url('images/bg-full.jpg');
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	min-height: 70vh;
-	margin-top: -70px;
-	display: flex;
-	align-items: center;
-	&__title {
-		max-width: 40%;
 	}
 }
 </style>
