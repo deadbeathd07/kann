@@ -1,7 +1,14 @@
 <template lang="pug">
 section
   figure
-    img(:src="props.contentObj.img.path")
+    img(:src="props.contentObj.img.path", :alt="props.contentObj.img.alt")
+    figcaption(v-if="props.contentObj.img.figcaption") {{ props.contentObj.img.figcaption }}
+  div
+    KannTitle(v-if="props.contentObj.block.title", :text="props.contentObj.block.title")
+    figure(v-if="props.contentObj.block.img")
+      img(:src="props.contentObj.block.img.path", :alt="props.contentObj.block.img.alt")
+      figcaption(v-if="props.contentObj.block.img.figcaption") {{ props.contentObj.block.img.figcaption }}
+    KannLink(v-if="props.contentObj.block.link", :href="props.contentObj.block.link.path", :text="props.contentObj.block.link.name")
 </template>
 
 <script setup>
