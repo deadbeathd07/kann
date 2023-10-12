@@ -59,11 +59,12 @@ const listSections = [
 
 <style lang="scss">
 .footer {
-	padding: 74px 1rem 98px;
+	padding: 74px 1rem 0;
 	&__menu-section {
 		display: flex;
 		justify-content: space-between;
 		width: 80%;
+		margin-bottom: 98px;
 	}
 	&__copywriting {
 		display: flex;
