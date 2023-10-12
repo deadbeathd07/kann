@@ -5,15 +5,6 @@ import KannSection from './components/KannSection.vue';
 
 const sectionsContent = [
 	{
-		type: 'full',
-		title: 'Galta collection by SCMP Design Office',
-		img: [
-			{
-				img_path: 'images/bg-full.jpg',
-			},
-		],
-	},
-	{
 		type: 'original',
 		title: 'Dans les coulisses de la fabrication Kann',
 		img: [
@@ -86,6 +77,7 @@ const sectionsContent = [
 div.layout__wrapper
   KannHeader(class="layout__header")
   main.layout__content
+    div.intro
     KannSection(v-for="(section, i) in sectionsContent", :key="i", :content-obj="section")
   KannFooter(class="layout__footer")
 </template>
@@ -114,5 +106,14 @@ div.layout__wrapper
 	&__section--position-top-70 {
 		margin-top: -70px;
 	}
+}
+.intro {
+	padding: 0 1rem;
+	background-image: url('images/bg-full.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 70vh;
+	margin-top: -70px;
 }
 </style>
