@@ -4,7 +4,7 @@ header.header.header--hover
   KannNavigation(:menu='menu' class-list="header__list fs-15")
   KannLangSwitcher.header__switcher(:lang-arr='languages')
   KannSearch
-  a.link.link--basic-link.link--hover.fs-15(href="#") points de vente
+  KannLink(text="points de vente") 
   KannCart
 </template>
 
@@ -14,6 +14,7 @@ import KannNavigation from './KannNavigation.vue';
 import KannLangSwitcher from './KannLangSwitcher.vue';
 import KannSearch from './KannSearch.vue';
 import KannCart from './KannCart.vue';
+import KannLink from './KannLink.vue';
 
 const menu = [
 	{ name: 'Shop', path: '#' },
@@ -31,6 +32,7 @@ const languages = ['fr', 'en'];
 	align-items: center;
 	padding: 20px 1rem;
 	transition: all 0.3s ease-out;
+	font-size: 15px;
 	& > * + * {
 		margin-right: 1rem;
 		&:last-child {

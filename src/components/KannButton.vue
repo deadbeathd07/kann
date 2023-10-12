@@ -23,7 +23,7 @@ const props = defineProps({
 	padding: 0;
 	color: #1a1818;
 	text-transform: lowercase;
-	font-size: 15px;
+	font-size: inherit;
 	cursor: pointer;
 	&--checked,
 	&--hover:hover {
