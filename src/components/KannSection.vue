@@ -1,42 +1,37 @@
 <template lang="pug">
-section.layout__section--position-top-70.section.section--bg-img.section--min-height-60.section--max-height-70
-  h1.title.title--basic-color.section__grid-element.section__grid-element--rows-full.section__grid-element--column-start-4.section__flex-element.section__flex-element--ai-center.fs-60.ls-12 Galta collection by SCMP Design Office
-section.section.section--min-height-70.section--max-height-100
+section.section.section--bg-img.section--min-height-60.section--max-height-70.layout__section--position-top-70(v-if='props.contentObj.type == "full"' style="background-image: {{ props.contentObj.img_path }}")
+  h1.title.title--basic-color.section__grid-element.section__grid-element--rows-full.section__grid-element--column-start-4.section__flex-element.section__flex-element--ai-center.fs-60.ls-12(v-if="props.contentObj.title") {{ props.contentObj.title }}
+section.section.section--min-height-70.section--max-height-100(v-else-if="props.contentObj.type == 'original'")
   div.section__grid-element.section__grid-element--rows-full.section__grid-element--column-start-4.section__flex-element.section__flex-element--vertical.section__flex-element--relative.section__flex-element--jc-center
-    h2.title.title--basic-color.fs-60.ls-12 Dans les coulisses de la fabrication Kann
-    a.section__link.section__link--pos-abs.section__link--b-0.section__link--start.link.link--basic-link.link--hover.fs-14(href="#") Lire l'article
+    h2.title.title--basic-color.fs-60.ls-12(v-if="props.contentObj.title") {{ props.contentObj.title }}
+    a.section__link.section__link--pos-abs.section__link--b-0.section__link--start.link.link--basic-link.link--hover.fs-14(v-if="props.contentObj.link", :href="props.contentObj.link.link_path") {{ props.contentObj.link.link_name }}
   figure.section__grid-element.section__grid-element--rows-full.section__grid-element--column-end-7
-    img.section__img(src="images/img-1.jpg", alt="Image of furniture")
-section.section.section--min-height-60.section--max-height-80
+    img.section__img(:src="props.contentObj.img.img_path", :alt="props.contentObj.img.img_alt")
+section.section.section--min-height-60.section--max-height-80(v-else-if="props.contentObj.type == 'double'")
   figure.section__grid-element.section__grid-element--rows-full.section__grid-element--column-start-6
-    img.section__img(src="images/img-2.jpg", alt="Image of furniture")
+    img.section__img(:src="props.contentObj.img.img_path", :alt="props.contentObj.img.img_alt")
   figure.section__grid-element.section__grid-element--rows-center-3.section__grid-element--column-end-4.section__flex-element.section__flex-element--vertical.section__flex-element--relative
-    img.section__img(src="images/img-3.jpg", alt="Image of furniture")
-    figcaption.lowercase.fs-15.lh-20 Cut / vert sablé
-    a.section__link.section__link--pos-abs.section__link--b-0.section__link--end.link.link--basic-link.link--hover.fs-15.lh-20(href="#") shop
-section.section.section--min-height-60.section--max-height-75
+    img.section__img(:src="props.contentObj.img.img_path", :alt="props.contentObj.img.img_alt")
+    figcaption.lowercase.fs-15.lh-20 {{ props.contentObj.img.figcaption }}
+    a.section__link.section__link--pos-abs.section__link--b-0.section__link--end.link.link--basic-link.link--hover.fs-15.lh-20(v-if="props.contentObj.link", :href="props.contentObj.link.link_path") {{ props.contentObj.link.link_name }} 
+section.section.section--min-height-60.section--max-height-75(v-else-if="props.contentObj.type == 'original-reverse'")
   div.section__grid-element.section__grid-element--rows-full.section__grid-element--column-end-4.section__flex-element.section__flex-element--vertical.section__flex-element--relative.section__flex-element--jc-center
-    h2.title.title--basic-color.fs-60.ls-12 Linéaire et minimaliste, les bancs Galta dessinés par SCMP Design Office
-    a.section__link.section__link--pos-abs.section__link--b-0.section__link--start.link.link--basic-link.link--hover.fs-14(href="#") Shop
+    h2.title.title--basic-color.fs-60.ls-12(v-if="props.contentObj.title") {{ props.contentObj.title }}
+    a.section__link.section__link--pos-abs.section__link--b-0.section__link--start.link.link--basic-link.link--hover.fs-14(v-if="props.contentObj.link", :href="props.contentObj.link.link_path") {{ props.contentObj.link.link_name }} 
   figure.section__grid-element.section__grid-element--rows-full.section__grid-element--column-start-7
-    img.section__img(src='images/img-4.jpg', alt="Image of furniture")
-section.section.section--min-height-60.section--max-height-80
-  figure.section__grid-element.section__grid-element--rows-full.section__grid-element--column-start-6
-    img.section__img(src="images/img-5.jpg", alt="Image of furniture")
-    figcaption.lowercase.fs-15.lh-20 voir toutes les chaises
-  figure.section__grid-element.section__grid-element--rows-center-3.section__grid-element--column-end-4.section__flex-element.section__flex-element--vertical.section__flex-element--relative
-    img.section__img(src="images/img-6.jpg", alt="Image of furniture")
-    figcaption.lowercase.fs-15.lh-20 tal / chêne noir
-    a.section__link.section__link--pos-abs.section__link--b-0.section__link--end.link.link--basic-link.link--hover.fs-15.lh-20(href="#") shop
-section.section.section--min-height-60.section--max-height-75
-  div.section__grid-element.section__grid-element--rows-full.section__grid-element--column-end-4.section__flex-element.section__flex-element--vertical.section__flex-element--relative.section__flex-element--jc-center
-    h2.title.title--basic-color.fs-60.ls-12 Des lignes horizontales s’encastrent dans le piètement, rendant apparente la technicité de l'assemblage.
-    a.section__link.section__link--pos-abs.section__link--b-0.section__link--start.link.link--basic-link.link--hover.fs-14(href="#") Shop
-  figure.section__grid-element.section__grid-element--rows-full.section__grid-element--column-start-7
-    img.section__img(src='images/img-7.jpg', alt="Image of furniture")
+    img.section__img(:src="props.contentObj.img.img_path", :alt="props.contentObj.img.img_alt")
 </template>
 
-<script setup></script>
+<script setup>
+const props = defineProps({
+	contentObj: {
+		type: Object,
+		required: true,
+	},
+});
+
+console.log(props.contentObj);
+</script>
 
 <style lang="scss">
 .section {
