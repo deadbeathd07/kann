@@ -1,7 +1,5 @@
 <template lang="pug">
-section.section.section--bg-img.section--min-height-60.section--max-height-70.layout__section--position-top-70(v-if='props.contentObj.type == "full"' style="background-image: {{ props.contentObj.img_path }}")
-  h1.title.title--basic-color.section__grid-element.section__grid-element--rows-full.section__grid-element--column-start-4.section__flex-element.section__flex-element--ai-center.fs-60.ls-12(v-if="props.contentObj.title") {{ props.contentObj.title }}
-section.section.section--min-height-70.section--max-height-100(v-else-if="props.contentObj.type == 'original'")
+section.section.section--min-height-70.section--max-height-100(v-if="props.contentObj.type == 'original'")
   div.section__grid-element.section__grid-element--rows-full.section__grid-element--column-start-4.section__flex-element.section__flex-element--vertical.section__flex-element--relative.section__flex-element--jc-center
     h2.title.title--basic-color.fs-60.ls-12(v-if="props.contentObj.title") {{ props.contentObj.title }}
     a.section__link.section__link--pos-abs.section__link--b-0.section__link--start.link.link--basic-link.link--hover.fs-14(v-if="props.contentObj.link", :href="props.contentObj.link.link_path") {{ props.contentObj.link.link_name }}
@@ -39,20 +37,11 @@ console.log(props.contentObj);
 	padding: 0 1rem;
 	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: repeat(5, 1fr);
-	&--bg-img {
-		background-image: url('images/bg-full.jpg');
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
-	}
 	&--min-height-60 {
 		min-height: 60vh;
 	}
 	&--min-height-70 {
 		min-height: 70vh;
-	}
-	&--max-height-70 {
-		max-height: 70vh;
 	}
 	&--max-height-75 {
 		max-height: 75vh;
