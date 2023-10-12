@@ -1,7 +1,7 @@
 <template lang="pug">
 section.section.section--min-height-70.section--max-height-100(v-if="props.contentObj.type == 'original'")
   div.section__grid-element.section__grid-element--rows-full.section__grid-element--column-start-4.section__flex-element.section__flex-element--vertical.section__flex-element--relative.section__flex-element--jc-center
-    h2.title.title--basic-color.fs-60.ls-12(v-if="props.contentObj.title") {{ props.contentObj.title }}
+    KannTitle(v-if="props.contentObj.title", :text="props.contentObj.title")
     a.section__link.section__link--pos-abs.section__link--b-0.section__link--start.link.link--basic-link.link--hover.fs-14(v-if="props.contentObj.link", :href="props.contentObj.link.link_path") {{ props.contentObj.link.link_name }}
   figure.section__grid-element.section__grid-element--rows-full.section__grid-element--column-end-7
     img.section__img(:src="props.contentObj.img[0].img_path", :alt="props.contentObj.img[0].img_alt")
@@ -14,13 +14,14 @@ section.section.section--min-height-60.section--max-height-80(v-else-if="props.c
     a.section__link.section__link--pos-abs.section__link--b-0.section__link--end.link.link--basic-link.link--hover.fs-15.lh-20(v-if="props.contentObj.link", :href="props.contentObj.link.link_path") {{ props.contentObj.link.link_name }} 
 section.section.section--min-height-60.section--max-height-75(v-else-if="props.contentObj.type == 'original-reverse'")
   div.section__grid-element.section__grid-element--rows-full.section__grid-element--column-end-4.section__flex-element.section__flex-element--vertical.section__flex-element--relative.section__flex-element--jc-center
-    h2.title.title--basic-color.fs-60.ls-12(v-if="props.contentObj.title") {{ props.contentObj.title }}
+    KannTitle(v-if="props.contentObj.title", :text="props.contentObj.title")
     a.section__link.section__link--pos-abs.section__link--b-0.section__link--start.link.link--basic-link.link--hover.fs-14(v-if="props.contentObj.link", :href="props.contentObj.link.link_path") {{ props.contentObj.link.link_name }} 
   figure.section__grid-element.section__grid-element--rows-full.section__grid-element--column-start-7
     img.section__img(:src="props.contentObj.img[0].img_path", :alt="props.contentObj.img[0].img_alt")
 </template>
 
 <script setup>
+import KannTitle from './KannTitle.vue';
 const props = defineProps({
 	contentObj: {
 		type: Object,
