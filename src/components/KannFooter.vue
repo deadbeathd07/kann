@@ -8,12 +8,13 @@ footer.footer.footer--top-border(:class="props.class")
     p © Kann Design 2021
     KannButton.footer__button.footer__button--hover(text="Gestion des cookies") 
     p Website by
-    a.link.link--basic-link.footer__link.footer__link--light.footer__link--hover(href='#') Studio Krabb &#38; Léa Tortay
+    KannLink.footer__link.footer__link--hover(text='Studio Krabb & Léa Tortay')
 </template>
 
 <script setup>
 import KannList from './KannList.vue';
 import KannButton from './KannButton.vue';
+import KannLink from './KannLink.vue';
 
 const props = defineProps({
 	class: {
@@ -63,28 +64,25 @@ const listSections = [
 <style lang="scss">
 .footer {
 	padding: 74px 1rem 0;
+	text-transform: lowercase;
+	color: lighten($color: #1a1818, $amount: 60);
+	font-size: 15px;
 	&__menu-section {
 		display: flex;
 		justify-content: space-between;
 		width: 80%;
 		margin-bottom: 98px;
+		color: #1a1818;
 	}
 	&__copywriting {
 		display: flex;
 		align-items: center;
 		padding: 17px 0;
-		&--light {
-			color: lighten($color: #1a1818, $amount: 60);
-		}
-		&--lowercase {
-			text-transform: lowercase;
-		}
 	}
 	&__list > * + * {
 		margin-top: 8px;
 	}
 	&__list-title {
-		color: #1a1818;
 		font-weight: normal;
 		text-transform: lowercase;
 		margin-bottom: 18px;
@@ -92,12 +90,11 @@ const listSections = [
 	&__button {
 		margin-right: auto;
 		margin-left: 20px;
-		color: lighten($color: #1a1818, $amount: 60);
+		color: inherit;
 	}
-	&__link.link {
+	&__link {
 		margin-left: 5px;
-	}
-	&__link--light {
+		color: inherit;
 	}
 	&__button--hover:hover,
 	&__link--hover:hover {
