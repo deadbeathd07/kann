@@ -92,6 +92,7 @@ div.layout__wrapper
 	&__header {
 		position: sticky;
 		top: 0;
+		z-index: 1000;
 	}
 	&__content {
 		flex: 1 0 auto;
