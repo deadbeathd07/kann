@@ -1,27 +1,13 @@
 <template lang="pug">
-section.section.section--min-height-70.section--max-height-100(v-if="props.contentObj.type == 'original'")
-  div.section__grid-element.section__grid-element--rows-full.section__grid-element--column-start-4.section__flex-element.section__flex-element--vertical.section__flex-element--relative.section__flex-element--jc-center
-    KannTitle(v-if="props.contentObj.title", :text="props.contentObj.title")
-    a.section__link.section__link--pos-abs.section__link--b-0.section__link--start.link.link--basic-link.link--hover.fs-14(v-if="props.contentObj.link", :href="props.contentObj.link.link_path") {{ props.contentObj.link.link_name }}
-  figure.section__grid-element.section__grid-element--rows-full.section__grid-element--column-end-7
-    img.section__img(:src="props.contentObj.img[0].img_path", :alt="props.contentObj.img[0].img_alt")
-section.section.section--min-height-60.section--max-height-80(v-else-if="props.contentObj.type == 'double'")
-  figure.section__grid-element.section__grid-element--rows-full.section__grid-element--column-start-6
-    img.section__img(:src="props.contentObj.img[0].img_path", :alt="props.contentObj.img[0].img_alt")
-  figure.section__grid-element.section__grid-element--rows-center-3.section__grid-element--column-end-4.section__flex-element.section__flex-element--vertical.section__flex-element--relative
-    img.section__img(:src="props.contentObj.img[1].img_path", :alt="props.contentObj.img[1].img_alt")
-    figcaption.lowercase.fs-15.lh-20 {{ props.contentObj.img[1].figcaption }}
-    a.section__link.section__link--pos-abs.section__link--b-0.section__link--end.link.link--basic-link.link--hover.fs-15.lh-20(v-if="props.contentObj.link", :href="props.contentObj.link.link_path") {{ props.contentObj.link.link_name }} 
-section.section.section--min-height-60.section--max-height-75(v-else-if="props.contentObj.type == 'original-reverse'")
-  div.section__grid-element.section__grid-element--rows-full.section__grid-element--column-end-4.section__flex-element.section__flex-element--vertical.section__flex-element--relative.section__flex-element--jc-center
-    KannTitle(v-if="props.contentObj.title", :text="props.contentObj.title")
-    a.section__link.section__link--pos-abs.section__link--b-0.section__link--start.link.link--basic-link.link--hover.fs-14(v-if="props.contentObj.link", :href="props.contentObj.link.link_path") {{ props.contentObj.link.link_name }} 
-  figure.section__grid-element.section__grid-element--rows-full.section__grid-element--column-start-7
-    img.section__img(:src="props.contentObj.img[0].img_path", :alt="props.contentObj.img[0].img_alt")
+section
+  figure
+    img(:src="props.contentObj.img.path")
 </template>
 
 <script setup>
 import KannTitle from './KannTitle.vue';
+import KannLink from './KannLink.vue';
+
 const props = defineProps({
 	contentObj: {
 		type: Object,
