@@ -1,7 +1,9 @@
 <template lang="pug">
 footer.footer.footer--top-border(:class="props.class")
   section.footer__menu-section
-    KannListSection(v-for='(listSection, i) in listSections', :key='i', :listSection='listSection' classList="footer__list fs-15")
+    div(v-for='(listSection, i) in listSections', :key='i')
+      h6.footer__list-title.fs-14.ls-03 {{ listSection.title }}
+      KannList(:list='listSection.menu', classList='footer__list fs-15')
   section.footer__copywriting.footer__copywriting--light.footer__copywriting--lowercase.fs-15
     p © Kann Design 2021
     button.button.button--basic-button.footer__button.footer__button--light.footer__button--hover.fs-15(type="button") Gestion des cookies
@@ -10,7 +12,7 @@ footer.footer.footer--top-border(:class="props.class")
 </template>
 
 <script setup>
-import KannListSection from './KannListSection.vue';
+import KannList from './KannList.vue';
 
 const props = defineProps({
 	class: {
@@ -79,6 +81,12 @@ const listSections = [
 	}
 	&__list > * + * {
 		margin-top: 8px;
+	}
+	&__list-title {
+		color: #1a1818;
+		font-weight: normal;
+		text-transform: lowercase;
+		margin-bottom: 18px;
 	}
 	&__button.button {
 		margin-right: auto;
