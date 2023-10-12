@@ -14,7 +14,7 @@ const props = defineProps({
 <style lang="scss">
 .title {
 	font-weight: bold;
-	color: #1a1818;
+	color: $color;
 	font-size: 60px;
 	letter-spacing: 1.2px;
 }

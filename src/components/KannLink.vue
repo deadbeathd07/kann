@@ -17,11 +17,10 @@ const props = defineProps({
 
 <style lang="scss">
 .link {
-	$color: #1a1818;
 	text-decoration: none;
 	transition: all 0.3s ease-in-out;
 	text-transform: lowercase;
-	color: $color;
+	color: inherit;
 	&--hover:hover {
 		color: lighten($color, $amount: 60);
 		text-decoration: underline;

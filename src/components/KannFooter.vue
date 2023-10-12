@@ -65,14 +65,14 @@ const listSections = [
 .footer {
 	padding: 74px 1rem 0;
 	text-transform: lowercase;
-	color: lighten($color: #1a1818, $amount: 60);
+	color: lighten($color, $amount: 60);
 	font-size: 15px;
 	&__menu-section {
 		display: flex;
 		justify-content: space-between;
 		width: 80%;
 		margin-bottom: 98px;
-		color: #1a1818;
+		color: $color;
 	}
 	&__copywriting {
 		display: flex;
@@ -98,10 +98,10 @@ const listSections = [
 	}
 	&__button--hover:hover,
 	&__link--hover:hover {
-		color: lighten($color: #1a1818, $amount: 40);
+		color: lighten($color, $amount: 40);
 	}
 	&--top-border {
-		border-top: 2px solid #1a1818;
+		border-top: 2px solid $color;
 	}
 }
 </style>
