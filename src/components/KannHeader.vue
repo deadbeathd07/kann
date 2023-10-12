@@ -1,13 +1,11 @@
 <template lang="pug">
 header.header.header--hover
-  div.header__top
-    KannLogo.header__logo(alt='Organisation\'s logo')
-    KannNavigation(:menu='menu' class-list="header__list fs-15")
-    KannLangSwitcher.header__switcher(:lang-arr='languages')
-    KannSearch
-    a.link.link--basic-link.link--hover.fs-15(href="#") points de vente
-    KannCart
-  div.header__bottom
+  KannLogo.header__logo(alt='Organisation\'s logo')
+  KannNavigation(:menu='menu' class-list="header__list fs-15")
+  KannLangSwitcher.header__switcher(:lang-arr='languages')
+  KannSearch
+  a.link.link--basic-link.link--hover.fs-15(href="#") points de vente
+  KannCart
 </template>
 
 <script setup>
@@ -29,17 +27,18 @@ const languages = ['fr', 'en'];
 
 <style lang="scss">
 .header {
+	display: flex;
+	align-items: center;
+	padding: 20px 1rem;
 	transition: all 0.3s ease-out;
-	&__top {
-		display: flex;
-		align-items: center;
-		padding: 20px 1rem;
-		& > * + * {
-			margin-right: 1rem;
-			&:last-child {
-				margin-right: 0;
-			}
+	& > * + * {
+		margin-right: 1rem;
+		&:last-child {
+			margin-right: 0;
 		}
+	}
+	&--hover:hover {
+		background-color: rgba($color: #ffffff, $alpha: 1);
 	}
 	&__logo {
 		margin-right: 20px;
@@ -52,9 +51,6 @@ const languages = ['fr', 'en'];
 		& > * + * {
 			margin-left: 1rem;
 		}
-	}
-	&--hover:hover {
-		background-color: rgba($color: #ffffff, $alpha: 1);
 	}
 }
 </style>
