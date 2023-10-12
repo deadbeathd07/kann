@@ -78,6 +78,7 @@ div.layout__wrapper
   KannHeader(class="layout__header")
   main.layout__content
     div.intro
+      h1.intro__title.title.title--basic-color.fs-60 Galta collection by SCMP Design Office
     KannSection(v-for="(section, i) in sectionsContent", :key="i", :content-obj="section")
   KannFooter(class="layout__footer")
 </template>
@@ -116,5 +117,10 @@ div.layout__wrapper
 	background-size: cover;
 	min-height: 70vh;
 	margin-top: -70px;
+	display: flex;
+	align-items: center;
+	&__title {
+		max-width: 40%;
+	}
 }
 </style>
