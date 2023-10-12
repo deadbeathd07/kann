@@ -6,13 +6,14 @@ footer.footer.footer--top-border(:class="props.class")
       KannList(:list='listSection.menu', classList='footer__list fs-15')
   section.footer__copywriting.footer__copywriting--light.footer__copywriting--lowercase.fs-15
     p © Kann Design 2021
-    button.button.button--basic-button.footer__button.footer__button--light.footer__button--hover.fs-15(type="button") Gestion des cookies
+    KannButton.footer__button.footer__button--hover(text="Gestion des cookies") 
     p Website by
     a.link.link--basic-link.footer__link.footer__link--light.footer__link--hover(href='#') Studio Krabb &#38; Léa Tortay
 </template>
 
 <script setup>
 import KannList from './KannList.vue';
+import KannButton from './KannButton.vue';
 
 const props = defineProps({
 	class: {
@@ -88,16 +89,15 @@ const listSections = [
 		text-transform: lowercase;
 		margin-bottom: 18px;
 	}
-	&__button.button {
+	&__button {
 		margin-right: auto;
 		margin-left: 20px;
+		color: lighten($color: #1a1818, $amount: 60);
 	}
 	&__link.link {
 		margin-left: 5px;
 	}
-	&__button--light,
 	&__link--light {
-		color: lighten($color: #1a1818, $amount: 60);
 	}
 	&__button--hover:hover,
 	&__link--hover:hover {

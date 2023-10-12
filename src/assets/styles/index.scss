@@ -2,7 +2,6 @@
 @import url('./reset.scss');
 
 @import url('./KannLink.scss');
-@import url('./KannButton.scss');
 @import url('./KannTitle.scss');
 
 :root {
@@ -20,10 +19,6 @@ body,
 
 .fs-14 {
 	font-size: 14px;
-}
-
-.fs-15 {
-	font-size: 15px;
 }
 
 .fs-60 {
