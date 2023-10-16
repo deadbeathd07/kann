@@ -65,6 +65,7 @@ function toggleOpeningSidebar() {
 	}
 	&--hover:hover {
 		background-color: rgba($color: #ffffff, $alpha: 1);
+		box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
 	}
 	&__logo {
 		margin-right: 20px;
