@@ -41,16 +41,17 @@ const props = defineProps({
 	}
 	&__content {
 		width: 30vw;
-		height: 100%;
 		display: flex;
 		flex-direction: column;
 		&--title {
+			height: 100%;
 			& > .section__title,
 			& > .section__link {
 				margin-top: auto;
 			}
 		}
 		&--img {
+			height: 70%;
 			align-items: flex-end;
 			justify-content: center;
 		}
