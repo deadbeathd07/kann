@@ -20,4 +20,12 @@ const props = defineProps({
 });
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+.figure {
+	&__img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+</style>
