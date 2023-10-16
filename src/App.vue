@@ -3,6 +3,7 @@ import KannHeader from './components/KannHeader.vue';
 import KannFooter from './components/KannFooter.vue';
 import KannSection from './components/KannSection.vue';
 import KannList from './components/KannList.vue';
+import KannForm from './components/KannForm.vue';
 
 const sectionsContent = [
 	{
@@ -154,6 +155,12 @@ const furnitureList = [
 		path: '#',
 	},
 ];
+
+const formContent = {
+	title:
+		'Abonnez-vous à notre newsletter pour recevoir nos offres et suivre notre actualité.',
+	button_text: "S'abonner",
+};
 </script>
 
 <template lang="pug">
@@ -165,6 +172,8 @@ div.layout__wrapper
     KannSection(v-for="(section, i) in sectionsContent", :key="i", :content-obj="section")
     section.layout__list-wrapper
       KannList.layout__list(:list="furnitureList")
+    section.layout__form
+      KannForm(:formContent="formContent")
   KannFooter(class="layout__footer")
 </template>
 
@@ -201,7 +210,7 @@ div.layout__wrapper
 		max-width: 40%;
 	}
 	&__footer {
-		margin-top: 115px;
+		margin-top: 27px;
 		flex: 0 0 auto;
 	}
 	&__section--position-top-70 {
@@ -212,6 +221,10 @@ div.layout__wrapper
 		display: flex;
 		justify-content: center;
 		font-size: 60px;
+	}
+	&__form {
+		padding: 0 1rem;
+		font-size: 47px;
 	}
 }
 </style>

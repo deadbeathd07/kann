@@ -1,14 +1,15 @@
 <template lang="pug">
 form.form
-  h3.form__title(v-if="formContent.title") {{ formContent.title }}
-  input.form__email(type="email", name="form__email")
-  KannButton(type="submit", :text="formContent.button_text")
+  h3.form__title(v-if="props.formContent.title") {{ props.formContent.title }}
+  div.form__fields-wrapper
+    input.form__field(type="email", name="form__email")
+    KannButton.form__button(type="submit", :text="props.formContent.button_text")
 </template>
 
 <script setup>
 import KannButton from './KannButton.vue';
 
-const formContent = defineProps({
+const props = defineProps({
 	formContent: {
 		type: Object,
 		required: true,
@@ -16,4 +17,26 @@ const formContent = defineProps({
 });
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+.form {
+	&__title {
+		max-width: 70%;
+		margin-bottom: 25px;
+	}
+	&__fields-wrapper {
+		display: flex;
+		align-items: center;
+	}
+	&__field {
+		display: block;
+		font-size: inherit;
+		border: none;
+		flex-grow: 1;
+	}
+	&__button {
+		display: block;
+		flex-grow: 0;
+		margin-left: 20px;
+	}
+}
+</style>
