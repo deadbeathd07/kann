@@ -1,11 +1,14 @@
 <template lang="pug">
-header.header.header--hover
+header.header.header--hover(v-if="!isSmall")
   KannLogo.header__logo(alt='Organisation\'s logo')
   KannNavigation(:menu='menu' class-list="header__list fs-15")
   KannLangSwitcher.header__switcher(:lang-arr='languages')
   KannSearch
   KannLink(text="points de vente") 
   KannCart
+header.header.header--hover(v-else)
+  KannLogo.header__logo(alt='Organisation\'s logo')
+  KannCart.header__cart.header__cart--small
 </template>
 
 <script setup>
@@ -15,7 +18,7 @@ import KannLangSwitcher from './KannLangSwitcher.vue';
 import KannSearch from './KannSearch.vue';
 import KannCart from './KannCart.vue';
 import KannLink from './KannLink.vue';
-import { computed, ref, watch } from 'vue';
+import { ref } from 'vue';
 
 const menu = [
 	{ name: 'Shop', path: '#' },
@@ -63,6 +66,9 @@ function isWindowSmall() {
 		& > * + * {
 			margin-left: 1rem;
 		}
+	}
+	&__cart--small {
+		margin-left: auto;
 	}
 }
 </style>
