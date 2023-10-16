@@ -15,6 +15,7 @@ import KannLangSwitcher from './KannLangSwitcher.vue';
 import KannSearch from './KannSearch.vue';
 import KannCart from './KannCart.vue';
 import KannLink from './KannLink.vue';
+import { computed, ref, watch } from 'vue';
 
 const menu = [
 	{ name: 'Shop', path: '#' },
@@ -24,6 +25,15 @@ const menu = [
 ];
 
 const languages = ['fr', 'en'];
+const isSmall = ref(isWindowSmall());
+
+window.addEventListener('resize', () => {
+	isSmall.value = isWindowSmall();
+});
+
+function isWindowSmall() {
+	return window.innerWidth <= 690;
+}
 </script>
 
 <style lang="scss">
