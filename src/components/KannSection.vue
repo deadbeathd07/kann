@@ -1,10 +1,10 @@
 <template lang="pug">
-section
-  KannFigure(:path="props.contentObj.img.path", :alt="props.contentObj.img.alt", :figcaption="props.contentObj.img.figcaption")
-  div
-    KannTitle(v-if="props.contentObj.block.title", :text="props.contentObj.block.title")
-    KannFigure(v-if="props.contentObj.block.img", :path="props.contentObj.block.img.path", :alt="props.contentObj.block.img.alt", :figcaption="props.contentObj.block.img.figcaption")
-    KannLink(v-if="props.contentObj.block.link", :href="props.contentObj.block.link.path", :text="props.contentObj.block.link.name")
+section.section(:class="props.contentObj.class")
+  KannFigure.section__img(:path="props.contentObj.img.path", :alt="props.contentObj.img.alt", :figcaption="props.contentObj.img.figcaption")
+  div.section__content
+    KannTitle.section__title(v-if="props.contentObj.block.title", :text="props.contentObj.block.title")
+    KannFigure.section__content-img(v-if="props.contentObj.block.img", :path="props.contentObj.block.img.path", :alt="props.contentObj.block.img.alt", :figcaption="props.contentObj.block.img.figcaption")
+    KannLink.section__link(v-if="props.contentObj.block.link", :href="props.contentObj.block.link.path", :text="props.contentObj.block.link.name")
 </template>
 
 <script setup>
@@ -18,91 +18,32 @@ const props = defineProps({
 		required: true,
 	},
 });
-
-console.log(props.contentObj);
 </script>
 
 <style lang="scss">
 .section {
-	display: grid;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	padding: 0 1rem;
-	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: repeat(5, 1fr);
-	&--min-height-60 {
-		min-height: 60vh;
+	height: 70vh;
+	&--large > .section__img {
+		width: 60vw;
 	}
-	&--min-height-70 {
-		min-height: 70vh;
-	}
-	&--max-height-75 {
-		max-height: 75vh;
-	}
-	&--max-height-80 {
-		max-height: 80vh;
-	}
-	&--max-height-100 {
-		max-height: 100vh;
-	}
-	&__grid-element {
-		&--rows-full {
-			grid-row-start: 1;
-			grid-row-end: 6;
-		}
-		&--rows-center-3 {
-			grid-row-start: 2;
-			grid-row-end: 5;
-		}
-		&--column-start-4 {
-			grid-column: span 4;
-		}
-		&--column-start-6 {
-			grid-column: span 6;
-		}
-		&--column-start-7 {
-			grid-column: span 7;
-		}
-		&--column-end-4 {
-			grid-column-start: 13;
-			grid-column-end: 9;
-		}
-		&--column-end-7 {
-			grid-column-start: 13;
-			grid-column-end: 6;
-		}
-	}
-	&__flex-element {
-		display: flex;
-		&--vertical {
-			flex-direction: column;
-		}
-		&--ai-center {
-			align-items: center;
-		}
-		&--jc-center {
-			justify-content: center;
-		}
-		&--relative {
-			position: relative;
-		}
+	&--medium > .section__img {
+		width: 50vw;
 	}
 	&__img {
-		width: 100%;
 		height: 100%;
-		object-fit: cover;
 	}
-	&__link {
-		&--pos-abs {
-			position: absolute;
-		}
-		&--b-0 {
-			bottom: 0;
-		}
-		&--end {
-			align-self: flex-end;
-		}
-		&--start {
-			align-self: flex-start;
-		}
+	&__content {
+		width: 30vw;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	&--reverse {
+		flex-direction: row-reverse;
 	}
 }
 </style>
