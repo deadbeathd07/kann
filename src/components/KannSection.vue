@@ -56,6 +56,9 @@ const props = defineProps({
 			justify-content: center;
 		}
 	}
+	&__content-img {
+		width: 100%;
+	}
 	&--reverse {
 		flex-direction: row-reverse;
 	}
