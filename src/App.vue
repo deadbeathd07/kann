@@ -2,6 +2,7 @@
 import KannHeader from './components/KannHeader.vue';
 import KannFooter from './components/KannFooter.vue';
 import KannSection from './components/KannSection.vue';
+import KannList from './components/KannList.vue';
 
 const sectionsContent = [
 	{
@@ -82,15 +83,88 @@ const sectionsContent = [
 		},
 	},
 ];
+
+const furnitureList = [
+	{
+		name: 'Banc',
+		path: '#',
+	},
+	{
+		name: 'banquette',
+		path: '#',
+	},
+	{
+		name: 'Bibliothèque',
+		path: '#',
+	},
+	{
+		name: 'buffet',
+		path: '#',
+	},
+	{
+		name: 'bureau',
+		path: '#',
+	},
+	{
+		name: 'canapé',
+		path: '#',
+	},
+	{
+		name: 'chaise',
+		path: '#',
+	},
+	{
+		name: 'chaise haute',
+		path: '#',
+	},
+	{
+		name: 'chariot bar',
+		path: '#',
+	},
+	{
+		name: 'étagère',
+		path: '#',
+	},
+	{
+		name: 'fauteuil',
+		path: '#',
+	},
+	{
+		name: 'luminaire',
+		path: '#',
+	},
+	{
+		name: 'miroir',
+		path: '#',
+	},
+	{
+		name: 'paravent',
+		path: '#',
+	},
+	{
+		name: 'patère et valet',
+		path: '#',
+	},
+	{
+		name: "table basse et d'appoint",
+		path: '#',
+	},
+	{
+		name: 'table de repas',
+		path: '#',
+	},
+];
 </script>
 
 <template lang="pug">
 div.layout__wrapper
   KannHeader(class="layout__header")
   main.layout__content
-    div.layout__promo
+    section.layout__promo
       h1.layout__title.title.title--basic-color.fs-60 Galta collection by SCMP Design Office
     KannSection(v-for="(section, i) in sectionsContent", :key="i", :content-obj="section")
+    section.layout__list-wrapper
+      KannList.layout__list(:list="furnitureList")
   KannFooter(class="layout__footer")
 </template>
 
@@ -132,6 +206,12 @@ div.layout__wrapper
 	}
 	&__section--position-top-70 {
 		margin-top: -70px;
+	}
+	&__list-wrapper {
+		padding: 0 1rem;
+		display: flex;
+		justify-content: center;
+		font-size: 60px;
 	}
 }
 </style>
