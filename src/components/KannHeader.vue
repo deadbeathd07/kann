@@ -6,11 +6,12 @@ header.header.header--hover(v-if="!isSmall")
   KannSearch
   KannLink(text="points de vente") 
   KannCart
-header.header.header--hover(v-else)
-  font-awesome-icon.header__menu-icon(icon="fa-solid fa-bars", size='lg')
+header.header(v-else)
+  font-awesome-icon.header__icon(icon="fa-solid fa-bars", size='lg')
   KannLogo.header__logo.header__logo--small(alt='Organisation\'s logo')
   KannCart.header__cart.header__cart--small
   aside.header__sidebar
+    font-awesome-icon.header__icon.header__icon--close(icon="fa-solid fa-xmark", size='lg')
     KannLangSwitcher.header__switcher.header__switcher--small(:lang-arr='languages')
     KannSearch.header__search.header__search--small
     KannNavigation(:menu='menu' class-list="header__list--small fs-15")
@@ -90,8 +91,12 @@ function isWindowSmall() {
 	&__cart--small {
 		margin-left: auto;
 	}
-	&__menu-icon {
+	&__icon {
 		cursor: pointer;
+		&--close {
+			margin-bottom: 20px;
+			align-self: flex-end;
+		}
 	}
 	&__sidebar {
 		position: absolute;
@@ -102,7 +107,7 @@ function isWindowSmall() {
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
-		padding: 50px;
+		padding: 70px 50px;
 		background-color: #ffffff;
 		box-shadow: 0px 5px 5px 5px rgba(34, 60, 80, 0.6);
 	}
