@@ -209,6 +209,12 @@ div.layout__wrapper
 	}
 	&__title {
 		max-width: 40%;
+		@media (max-width: 820px) {
+			max-width: 100%;
+		}
+		@media (min-width: 821px) and (max-width: 1024px) {
+			max-width: 70%;
+		}
 	}
 	&__footer {
 		margin-top: 27px;
