@@ -28,5 +28,8 @@ const props = defineProps({
 		height: 100%;
 		object-fit: cover;
 	}
+	&__figcaption {
+		text-transform: lowercase;
+	}
 }
 </style>
