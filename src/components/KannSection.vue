@@ -1,7 +1,7 @@
 <template lang="pug">
 section.section(:class="props.contentObj.class")
-  KannFigure.section__img(:path="props.contentObj.img.path", :alt="props.contentObj.img.alt", :figcaption="props.contentObj.img.figcaption")
-  div.section__content
+  KannFigure.section__img(:path="props.contentObj.img.path", :alt="props.contentObj.img.alt", :figcaption="props.contentObj.img.figcaption", :class="props.contentObj.block.img ? 'section__img--medium' : 'section__img--large'")
+  div.section__content(:class="props.contentObj.block.img ? 'section__content--img' : 'section__content--title'")
     KannTitle.section__title(v-if="props.contentObj.block.title", :text="props.contentObj.block.title")
     KannFigure.section__content-img(v-if="props.contentObj.block.img", :path="props.contentObj.block.img.path", :alt="props.contentObj.block.img.alt", :figcaption="props.contentObj.block.img.figcaption")
     KannLink.section__link(v-if="props.contentObj.block.link", :href="props.contentObj.block.link.path", :text="props.contentObj.block.link.name")
@@ -27,20 +27,31 @@ const props = defineProps({
 	align-items: center;
 	padding: 0 1rem;
 	height: 70vh;
-	&--large > .section__img {
-		width: 60vw;
-	}
-	&--medium > .section__img {
-		width: 50vw;
-	}
 	&__img {
-		height: 100%;
+		&--large {
+			width: 60vw;
+		}
+		&--medium {
+			width: 50vw;
+		}
+	}
+	&__link {
+		margin-top: 2px;
 	}
 	&__content {
 		width: 30vw;
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
+		&--title {
+			& > .section__title,
+			& > .section__link {
+				margin-top: auto;
+			}
+		}
+		&--img {
+			align-items: flex-end;
+			justify-content: center;
+		}
 	}
 	&--reverse {
 		flex-direction: row-reverse;
