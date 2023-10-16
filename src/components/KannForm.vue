@@ -2,7 +2,7 @@
 form.form
   h3.form__title(v-if="props.formContent.title") {{ props.formContent.title }}
   div.form__fields-wrapper
-    input.form__field(type="email", name="form__email")
+    input.form__field(type="email", name="form__email", :placeholder="props.formContent.placeholder")
     KannButton.form__button(type="submit", :text="props.formContent.button_text")
 </template>
 

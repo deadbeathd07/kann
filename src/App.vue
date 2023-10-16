@@ -159,6 +159,7 @@ const furnitureList = [
 const formContent = {
 	title:
 		'Abonnez-vous à notre newsletter pour recevoir nos offres et suivre notre actualité.',
+	placeholder: 'votre adresse email',
 	button_text: "S'abonner",
 };
 </script>
