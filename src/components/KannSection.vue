@@ -27,6 +27,7 @@ const props = defineProps({
 	align-items: center;
 	padding: 0 1rem;
 	height: 70vh;
+	overflow: hidden;
 	&__img {
 		&--large {
 			width: 60vw;
@@ -40,6 +41,7 @@ const props = defineProps({
 	}
 	&__content {
 		width: 30vw;
+		height: 100%;
 		display: flex;
 		flex-direction: column;
 		&--title {
