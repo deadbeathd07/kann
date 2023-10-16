@@ -5,6 +5,7 @@ import KannSection from './components/KannSection.vue';
 
 const sectionsContent = [
 	{
+		class: 'section--reverse section--large',
 		img: {
 			path: 'images/img-1.jpg',
 			alt: 'Image of furniture',
