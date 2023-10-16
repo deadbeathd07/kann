@@ -25,16 +25,15 @@ const props = defineProps({
 	}
 	&__fields-wrapper {
 		display: flex;
+		flex-wrap: wrap;
 		align-items: center;
 	}
 	&__field {
-		display: block;
 		font-size: inherit;
 		border: none;
 		flex-grow: 1;
 	}
 	&__button {
-		display: block;
 		flex-grow: 0;
 		margin-left: 20px;
 	}
