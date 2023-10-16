@@ -22,6 +22,7 @@ const props = defineProps({
 
 <style lang="scss">
 .figure {
+	height: 100%;
 	&__img {
 		width: 100%;
 		height: 100%;
