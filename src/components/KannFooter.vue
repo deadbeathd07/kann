@@ -69,15 +69,25 @@ const listSections = [
 	font-size: 15px;
 	&__menu-section {
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-between;
 		width: 80%;
 		margin-bottom: 98px;
 		color: $color;
+		@media (max-width: 820px) {
+			width: 100%;
+		}
+	}
+	@media (max-width: 820px) {
+		font-size: 12px;
 	}
 	&__copywriting {
 		display: flex;
 		align-items: center;
 		padding: 17px 0;
+		@media (max-width: 820px) {
+			flex-direction: column;
+		}
 	}
 	&__list > * + * {
 		margin-top: 8px;
@@ -91,6 +101,9 @@ const listSections = [
 		margin-right: auto;
 		margin-left: 20px;
 		color: inherit;
+		@media (max-width: 820px) {
+			margin: 10px 0;
+		}
 	}
 	&__link {
 		margin-left: 5px;
