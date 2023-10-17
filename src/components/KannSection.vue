@@ -31,9 +31,26 @@ const props = defineProps({
 	&__img {
 		&--large {
 			width: 60vw;
+			@media (max-width: 820px) {
+				width: 100vw;
+			}
 		}
 		&--medium {
 			width: 50vw;
+			@media (max-width: 820px) {
+				width: 100vw;
+			}
+		}
+		@media (max-width: 820px) {
+			&::before {
+				content: '';
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				background-color: rgba(#fff, 0.3);
+			}
 		}
 	}
 	&__link {
@@ -55,12 +72,26 @@ const props = defineProps({
 			align-items: flex-end;
 			justify-content: center;
 		}
+		@media (max-width: 820px) {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100vw;
+			padding: 0 1rem;
+		}
 	}
 	&__content-img {
 		width: 100%;
 	}
 	&--reverse {
 		flex-direction: row-reverse;
+		@media (max-width: 820px) {
+			flex-direction: column-reverse;
+		}
+	}
+	@media (max-width: 820px) {
+		position: relative;
+		flex-direction: column;
 	}
 }
 </style>
