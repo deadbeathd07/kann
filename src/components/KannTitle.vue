@@ -17,5 +17,8 @@ const props = defineProps({
 	color: $color;
 	font-size: 60px;
 	letter-spacing: 1.2px;
+	@media (max-width: 820px) {
+		font-size: 48px;
+	}
 }
 </style>
