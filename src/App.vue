@@ -194,6 +194,9 @@ div.layout__wrapper
 		flex: 1 0 auto;
 		& > * + * {
 			margin-top: 115px;
+			@media (max-width: 820px) {
+				margin-top: 58px;
+			}
 		}
 	}
 	&__promo {
