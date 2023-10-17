@@ -1,6 +1,6 @@
 <template lang="pug">
 section.section(:class="props.contentObj.class")
-  KannFigure.section__img(:path="props.contentObj.img.path", :alt="props.contentObj.img.alt", :figcaption="props.contentObj.img.figcaption", :class="props.contentObj.block.img ? 'section__img--medium' : 'section__img--large'")
+  KannFigure.section__img(:path="props.contentObj.img.path", :alt="props.contentObj.img.alt", :figcaption="props.contentObj.img.figcaption", :class="props.contentObj.block.img ? 'section__img--medium section__img--alternative' : 'section__img--large section__img--normal'")
   div.section__content(:class="props.contentObj.block.img ? 'section__content--img' : 'section__content--title'")
     KannTitle.section__title(v-if="props.contentObj.block.title", :text="props.contentObj.block.title")
     KannFigure.section__content-img(v-if="props.contentObj.block.img", :path="props.contentObj.block.img.path", :alt="props.contentObj.block.img.alt", :figcaption="props.contentObj.block.img.figcaption")
@@ -27,7 +27,7 @@ const props = defineProps({
 	align-items: center;
 	padding: 0 1rem;
 	height: 70vh;
-	overflow: hidden;
+	max-width: 100%;
 	&__img {
 		&--large {
 			width: 60vw;
@@ -41,15 +41,22 @@ const props = defineProps({
 				width: 100vw;
 			}
 		}
-		@media (max-width: 820px) {
-			&::before {
-				content: '';
-				position: absolute;
-				width: 100%;
-				height: 100%;
-				top: 0;
-				left: 0;
-				background-color: rgba(#fff, 0.3);
+		&--normal {
+			@media (max-width: 820px) {
+				&::before {
+					content: '';
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					top: 0;
+					left: 0;
+					background-color: rgba(#fff, 0.3);
+				}
+			}
+		}
+		&--alternative {
+			@media (max-width: 820px) {
+				height: 50%;
 			}
 		}
 	}
@@ -66,18 +73,22 @@ const props = defineProps({
 			& > .section__link {
 				margin-top: auto;
 			}
+			@media (max-width: 820px) {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100vw;
+				padding: 0 1rem;
+			}
 		}
 		&--img {
 			height: 70%;
 			align-items: flex-end;
 			justify-content: center;
-		}
-		@media (max-width: 820px) {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100vw;
-			padding: 0 1rem;
+			@media (max-width: 820px) {
+				width: 100vh;
+				height: 50%;
+			}
 		}
 	}
 	&__content-img {
@@ -92,6 +103,7 @@ const props = defineProps({
 	@media (max-width: 820px) {
 		position: relative;
 		flex-direction: column;
+		overflow: hidden;
 	}
 }
 </style>

@@ -23,6 +23,7 @@ const props = defineProps({
 <style lang="scss">
 .figure {
 	height: 100%;
+	position: relative;
 	&__img {
 		width: 100%;
 		height: 100%;
@@ -30,6 +31,12 @@ const props = defineProps({
 	}
 	&__figcaption {
 		text-transform: lowercase;
+		@media (max-width: 820px) {
+			position: absolute;
+			top: 0;
+			left: 0;
+			padding: 0 1rem;
+		}
 	}
 }
 </style>
