@@ -32,13 +32,13 @@ const props = defineProps({
 		&--large {
 			width: 60vw;
 			@media (max-width: 820px) {
-				width: 100vw;
+				width: 100%;
 			}
 		}
 		&--medium {
 			width: 50vw;
 			@media (max-width: 820px) {
-				width: 100vw;
+				width: 100%;
 			}
 		}
 		&--normal {
@@ -77,7 +77,7 @@ const props = defineProps({
 				position: absolute;
 				top: 0;
 				left: 0;
-				width: 100vw;
+				width: 100%;
 				padding: 0 1rem;
 			}
 		}
@@ -86,7 +86,7 @@ const props = defineProps({
 			align-items: flex-end;
 			justify-content: center;
 			@media (max-width: 820px) {
-				width: 100vw;
+				width: 100%;
 				height: 50%;
 				justify-content: start;
 			}

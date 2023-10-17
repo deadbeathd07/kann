@@ -15,10 +15,7 @@ const props = defineProps({
 .title {
 	font-weight: bold;
 	color: $color;
-	font-size: 60px;
+	font-size: calc((100vw - 365px) / (1440 - 365) * (60 - 48) + 48px);
 	letter-spacing: 1.2px;
-	@media (max-width: 820px) {
-		font-size: 48px;
-	}
 }
 </style>
