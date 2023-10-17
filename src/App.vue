@@ -181,7 +181,7 @@ div.layout__wrapper
 <style lang="scss">
 .layout {
 	&__wrapper {
-		min-height: 100%;
+		height: 100%;
 		display: flex;
 		flex-direction: column;
 	}
@@ -228,10 +228,16 @@ div.layout__wrapper
 		display: flex;
 		justify-content: center;
 		font-size: 60px;
+		@media (max-width: 820px) {
+			font-size: 48px;
+		}
 	}
 	&__form {
 		padding: 0 1rem;
 		font-size: 47px;
+		@media (max-width: 820px) {
+			font-size: 37px;
+		}
 	}
 }
 </style>

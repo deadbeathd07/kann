@@ -86,8 +86,9 @@ const props = defineProps({
 			align-items: flex-end;
 			justify-content: center;
 			@media (max-width: 820px) {
-				width: 100vh;
+				width: 100vw;
 				height: 50%;
+				justify-content: start;
 			}
 		}
 	}
@@ -103,7 +104,6 @@ const props = defineProps({
 	@media (max-width: 820px) {
 		position: relative;
 		flex-direction: column;
-		overflow: hidden;
 	}
 }
 </style>
