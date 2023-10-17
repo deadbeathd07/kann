@@ -104,7 +104,7 @@ function toggleOpeningSidebar() {
 		}
 	}
 	&__sidebar {
-		position: absolute;
+		position: fixed;
 		top: 0;
 		width: 30vw;
 		height: 100vh;
@@ -120,6 +120,9 @@ function toggleOpeningSidebar() {
 		}
 		&--open {
 			left: 0;
+		}
+		@media (max-width: 820px) {
+			width: 60vw;
 		}
 	}
 	&__search--small {
