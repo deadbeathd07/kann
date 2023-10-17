@@ -37,7 +37,6 @@ const props = defineProps({
 		flex: 1 1 auto;
 	}
 	&__button {
-		margin-left: 20px;
 		flex: 0 1 auto;
 	}
 }
