@@ -1,0 +1,61 @@
+{
+	"menu": {
+		"header": {
+			"shop": "butique",
+			"projects": "projets",
+			"journal": "journal",
+			"about": "à propos"
+		},
+		"furniture": {
+			"bench": "Banc",
+			"stool": "banquette",
+			"Library": "Bibliothèque",
+			"buffet": "buffet",
+			"desk": "bureau",
+			"couch": "canapé",
+			"chair": "chaise",
+			"high_chair": "chaise haute",
+			"bar_trolley": "chariot bar",
+			"shelf": "étagère",
+			"armchair": "fauteuil",
+			"lamp": "luminaire",
+			"mirror": "miroir",
+			"screen": "paravent",
+			"coat_hook_valet": "patère et valet",
+			"coffee_side_table": "table basse et d'appoint",
+			"dining table": "table de repas"
+		},
+		"design": [
+			"À propos",
+			"Projets",
+			"Journal",
+			"Designers",
+			"Points de vente"
+		],
+		"contacts": ["Contact", "Compte", "Retours", "cgv"],
+		"proff": ["Catalogue", "Banque d'image", "Fiche produit", "Fichier 3D"]
+	},
+	"search": "rechercher",
+	"points": "points de vente",
+	"cart": "panier",
+	"title": {
+		"intro": "Collection Galta par SCMP Design Office",
+		"sections": [
+			"Dans les coulisses de la fabrication Kann",
+			"Linéaire et minimaliste, les bancs Galta dessinés par SCMP Design Office",
+			"Des lignes horizontales s'encastrent dans le piètement, rendant apparente la technicité de l'assemblage."
+		],
+		"form": "Abonnez-vous à notre newsletter pour recevoir nos offres et suivre notre actualité",
+		"lists": [
+			"Conception Kann",
+			"Besoin d'aide?",
+			"Professionnel",
+			"Nous suivre"
+		]
+	},
+	"links": {
+		"shop": "butique",
+		"read": "Lire l'article",
+		"subscribe": "S'abonner"
+	}
+}
