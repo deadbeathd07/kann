@@ -200,7 +200,7 @@ div.layout__wrapper
 	}
 	&__promo {
 		padding: 0 1rem;
-		background-image: url('images/bg-full.jpg');
+		background-image: url('../images/bg-full.jpg');
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
