@@ -1,46 +1,85 @@
 {
-	"menu": {
-		"header": {
+	"header": {
+		"menu": {
 			"shop": "shop",
 			"projects": "projects",
 			"journal": "journal",
 			"about": "about"
 		},
-		"furniture": {
-			"bench": "Bench",
-			"stool": "Stool",
-			"Library": "Library",
-			"buffet": "buffet",
-			"desk": "desk",
-			"couch": "couch",
-			"chair": "chair",
-			"high_chair": "high chair",
-			"bar_trolley": "bar trolley",
-			"shelf": "shelf",
-			"armchair": "armchair",
-			"lamp": "lamp",
-			"mirror": "mirror",
-			"screen": "screen",
-			"coat_hook_valet": "coat hook and valet",
-			"coffee_side_table": "coffee and side table",
-			"dining table": "dining table"
+		"btns": {
+			"search": "search",
+			"cart": "cart"
 		},
-		"design": ["About", "Projects", "Journal", "Designers", "Points of sale"],
-		"contacts": ["Contact", "Account", "Returns", "cgv"],
-		"proff": ["Catalog", "image Bank", "Product sheet", "3D file"]
+		"links": {
+			"points": "points of sale"
+		}
 	},
-	"search": "search",
-	"points": "points of sale",
-	"cart": "cart",
+	"furniture": {
+		"bench": "Bench",
+		"stool": "Stool",
+		"Library": "Library",
+		"buffet": "buffet",
+		"desk": "desk",
+		"couch": "couch",
+		"chair": "chair",
+		"high_chair": "high chair",
+		"bar_trolley": "bar trolley",
+		"shelf": "shelf",
+		"armchair": "armchair",
+		"lamp": "lamp",
+		"mirror": "mirror",
+		"screen": "screen",
+		"coat_hook_valet": "coat hook and valet",
+		"coffee_side_table": "coffee and side table",
+		"dining table": "dining table"
+	},
+	"sections": [
+		{
+			"title": "Behind the scenes of Kann manufacturing"
+		},
+		{
+			"title": "Linear and minimalist, the Galta benches designed by SCMP Design Office"
+		},
+		{
+			"title": "Horizontal lines are embedded in the base, making the technicality of the assembly apparent."
+		}
+	],
+	"footer": {
+		"conception": {
+			"title": "Kann Design",
+			"list": {
+				"about": "About",
+				"projects": "Projects",
+				"journal": "Journal",
+				"design": "Designers",
+				"points": "Points of sale"
+			}
+		},
+		"contacts": {
+			"title": "Need help?",
+			"list": {
+				"contact": "Contact",
+				"account": "Account",
+				"return": "Returns",
+				"cgv": "cgv"
+			}
+		},
+		"proff": {
+			"title": "Professional",
+			"list": {
+				"catalog": "Catalog",
+				"bank": "image Bank",
+				"sheet": "Product sheet",
+				"3d": "3D file"
+			}
+		},
+		"social": {
+			"title": "Follow us"
+		}
+	},
 	"title": {
 		"intro": "Galta collection by SCMP Design Office",
-		"sections": [
-			"Behind the scenes of Kann manufacturing",
-			"Linear and minimalist, the Galta benches designed by SCMP Design Office",
-			"Horizontal lines are embedded in the base, making the technicality of the assembly apparent."
-		],
-		"form": "Subscribe to our newsletter to receive our offers and follow our news.",
-		"lists": ["Kann Design", "Need help?", "Professional", "Follow us"]
+		"form": "Subscribe to our newsletter to receive our offers and follow our news."
 	},
 	"links": {
 		"shop": "shop",
