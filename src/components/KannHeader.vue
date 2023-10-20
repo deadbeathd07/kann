@@ -4,7 +4,7 @@ header.header.header--hover(v-if="!isSmall")
   KannNavigation(:menu='menu' class-list="header__list header__list--large fs-15")
   KannLangSwitcher.header__switcher.header__switcher--large(:lang-arr='languages')
   KannSearch
-  KannLink(text="points de vente") 
+  KannLink(:text="$t('header.links.points')") 
   KannCart
 header.header(v-else)
   font-awesome-icon.header__icon(icon="fa-solid fa-bars", size='lg', @click="toggleOpeningSidebar")
