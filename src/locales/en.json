@@ -81,9 +81,18 @@
 		"intro": "Galta collection by SCMP Design Office",
 		"form": "Subscribe to our newsletter to receive our offers and follow our news."
 	},
+	"placeholder": "Your email address",
 	"links": {
 		"shop": "shop",
-		"read": "Read the article",
+		"read": "Read the article"
+	},
+	"btns": {
 		"subscribe": "subscribe"
+	},
+	"img_alt": "Image of furniture",
+	"img_descriptions": {
+		"img_2": "Cut / sand green",
+		"img_3": "see all chairs",
+		"img_4": "metal / black oak"
 	}
 }

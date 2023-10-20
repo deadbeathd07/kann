@@ -17,7 +17,7 @@
 	"furniture": {
 		"bench": "Banc",
 		"stool": "banquette",
-		"Library": "Bibliothèque",
+		"library": "Bibliothèque",
 		"buffet": "buffet",
 		"desk": "bureau",
 		"couch": "canapé",
@@ -84,9 +84,18 @@
 		"intro": "Collection Galta par SCMP Design Office",
 		"form": "Abonnez-vous à notre newsletter pour recevoir nos offres et suivre notre actualité"
 	},
+	"placeholder": "'votre adresse email'",
 	"links": {
 		"shop": "butique",
-		"read": "Lire l'article",
+		"read": "Lire l'article"
+	},
+	"btns": {
 		"subscribe": "S'abonner"
+	},
+	"img_alt": "Image de meuble",
+	"img_descriptions": {
+		"img_2": "Cut / vert sablé",
+		"img_3": "voir toutes les chaises",
+		"img_4": "tal / chêne noir"
 	}
 }
