@@ -1,5 +1,5 @@
 <template lang="pug">
-KannButton(:text="'Cart ' + count.toString()")
+KannButton(:text="$t('header.btns.cart') + ' ' + count.toString()")
 </template>
 
 <script setup>

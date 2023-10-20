@@ -15,6 +15,9 @@ footer.footer.footer--top-border(:class="props.class")
 import KannList from './KannList.vue';
 import KannButton from './KannButton.vue';
 import KannLink from './KannLink.vue';
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
 
 const props = defineProps({
 	class: {
@@ -24,7 +27,7 @@ const props = defineProps({
 
 const listSections = [
 	{
-		title: 'Kann Design',
+		title: t('footer.lists[0].title'),
 		menu: [
 			{ name: 'À propos', path: '#' },
 			{ name: 'Projets', path: '#' },
