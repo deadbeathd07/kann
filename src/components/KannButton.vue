@@ -1,5 +1,5 @@
 <template lang="pug">
-button.button.button--hover(:type="props.type") {{ props.text }}
+button.button.button--hover(:type="props.type", @click="click") {{ props.text }}
 </template>
 
 <script setup>
@@ -13,6 +13,12 @@ const props = defineProps({
 		default: 'button',
 	},
 });
+
+const emits = defineEmits(['changeLang']);
+
+function click(event) {
+	emits('changeLang', event);
+}
 </script>
 
 <style lang="scss" scoped>

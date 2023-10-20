@@ -17,7 +17,7 @@
 	"furniture": {
 		"bench": "Bench",
 		"stool": "Stool",
-		"Library": "Library",
+		"library": "Library",
 		"buffet": "buffet",
 		"desk": "desk",
 		"couch": "couch",
@@ -75,6 +75,9 @@
 		},
 		"social": {
 			"title": "Follow us"
+		},
+		"btn": {
+			"cookie": "Cookie management"
 		}
 	},
 	"title": {
