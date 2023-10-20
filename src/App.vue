@@ -169,7 +169,7 @@ div.layout__wrapper
   KannHeader(class="layout__header")
   main.layout__content
     section.layout__promo
-      h1.layout__title.title.title--basic-color.fs-60 Galta collection by SCMP Design Office
+      h1.layout__title.title.title--basic-color.fs-60 {{ $t('title.intro') }}
     KannSection(v-for="(section, i) in sectionsContent", :key="i", :content-obj="section")
     section.layout__list-wrapper
       KannList.layout__list(:list="furnitureList")

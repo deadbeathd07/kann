@@ -1,5 +1,5 @@
 <template lang="pug">
-KannButton(text="Search")
+KannButton(:text="$t('header.btns.search')")
 </template>
 
 <script setup>
