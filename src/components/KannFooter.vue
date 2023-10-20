@@ -6,7 +6,7 @@ footer.footer.footer--top-border(:class="props.class")
       KannList(:list='listSection.menu', classList='footer__list fs-15')
   section.footer__copywriting.footer__copywriting--light.footer__copywriting--lowercase.fs-15
     p © Kann Design 2021
-    KannButton.footer__button.footer__button--hover(text="Gestion des cookies") 
+    KannButton.footer__button.footer__button--hover(:text="$t('footer.btn.cookie')") 
     p Website by
     KannLink.footer__link.footer__link--hover(text='Studio Krabb & Léa Tortay')
 </template>
@@ -27,35 +27,35 @@ const props = defineProps({
 
 const listSections = [
 	{
-		title: t('footer.lists[0].title'),
+		title: t('footer.conception.title'),
 		menu: [
-			{ name: 'À propos', path: '#' },
-			{ name: 'Projets', path: '#' },
-			{ name: 'Journal', path: '#' },
-			{ name: 'Designers', path: '#' },
-			{ name: 'Points de vente', path: '#' },
+			{ name: t('footer.conception.list.about'), path: '#' },
+			{ name: t('footer.conception.list.projects'), path: '#' },
+			{ name: t('footer.conception.list.journal'), path: '#' },
+			{ name: t('footer.conception.list.design'), path: '#' },
+			{ name: t('footer.conception.list.points'), path: '#' },
 		],
 	},
 	{
-		title: "Besoin d'aide ?",
+		title: t('footer.contacts.title'),
 		menu: [
-			{ name: 'Contact', path: '#' },
-			{ name: 'Compte', path: '#' },
-			{ name: 'Retours', path: '#' },
-			{ name: 'cgv', path: '#' },
+			{ name: t('footer.contacts.list.contact'), path: '#' },
+			{ name: t('footer.contacts.list.account'), path: '#' },
+			{ name: t('footer.contacts.list.return'), path: '#' },
+			{ name: t('footer.contacts.list.cgv'), path: '#' },
 		],
 	},
 	{
-		title: 'Professionnel',
+		title: t('footer.proff.title'),
 		menu: [
-			{ name: 'Catalogue', path: '#' },
-			{ name: "Banque d'image", path: '#' },
-			{ name: 'Fiche produit', path: '#' },
-			{ name: 'Fichier 3D', path: '#' },
+			{ name: t('footer.proff.list.catalog'), path: '#' },
+			{ name: t('footer.proff.list.bank'), path: '#' },
+			{ name: t('footer.proff.list.sheet'), path: '#' },
+			{ name: t('footer.proff.list.3d'), path: '#' },
 		],
 	},
 	{
-		title: 'Nous suivre',
+		title: t('footer.social.title'),
 		menu: [
 			{ name: 'Instagram', path: '#' },
 			{ name: 'Facebook', path: '#' },

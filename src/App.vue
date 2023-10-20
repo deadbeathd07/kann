@@ -4,18 +4,21 @@ import KannFooter from './components/KannFooter.vue';
 import KannSection from './components/KannSection.vue';
 import KannList from './components/KannList.vue';
 import KannForm from './components/KannForm.vue';
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
 
 const sectionsContent = [
 	{
 		class: 'section--reverse',
 		img: {
 			path: 'images/img-1.jpg',
-			alt: 'Image of furniture',
+			alt: t('img_alt'),
 		},
 		block: {
-			title: 'Dans les coulisses de la fabrication Kann',
+			title: t('sections[0].title'),
 			link: {
-				name: "Lire l'article",
+				name: t('links.read'),
 				path: '#',
 			},
 		},
@@ -23,30 +26,29 @@ const sectionsContent = [
 	{
 		img: {
 			path: 'images/img-2.jpg',
-			alt: 'Image of furniture',
+			alt: t('img_alt'),
 		},
 		block: {
 			link: {
-				name: 'shop',
+				name: t('links.shop'),
 				path: '#',
 			},
 			img: {
 				path: 'images/img-3.jpg',
-				alt: 'Image of furniture',
-				figcaption: 'Cut / vert sablé',
+				alt: t('img_alt'),
+				figcaption: t('img_descriptions.img_2'),
 			},
 		},
 	},
 	{
 		img: {
 			path: 'images/img-4.jpg',
-			alt: 'Image of furniture',
+			alt: t('img_alt'),
 		},
 		block: {
-			title:
-				'Linéaire et minimaliste, les bancs Galta dessinés par SCMP Design Office',
+			title: t('sections[1].title'),
 			link: {
-				name: 'shop',
+				name: t('links.shop'),
 				path: '#',
 			},
 		},
@@ -54,31 +56,30 @@ const sectionsContent = [
 	{
 		img: {
 			path: 'images/img-5.jpg',
-			alt: 'Image of furniture',
-			figcaption: 'voir toutes les chaises',
+			alt: t('img_alt'),
+			figcaption: t('img_descriptions.img_3'),
 		},
 		block: {
 			link: {
-				name: 'shop',
+				name: t('links.shop'),
 				path: '#',
 			},
 			img: {
 				path: 'images/img-6.jpg',
-				alt: 'Image of furniture',
-				figcaption: 'tal / chêne noir',
+				alt: t('img_alt'),
+				figcaption: t('img_descriptions.img_4'),
 			},
 		},
 	},
 	{
 		img: {
 			path: 'images/img-7.jpg',
-			alt: 'Image of furniture',
+			alt: t('img_alt'),
 		},
 		block: {
-			title:
-				"Des lignes horizontales s’encastrent dans le piètement, rendant apparente la technicité de l'assemblage.",
+			title: t('sections[2].title'),
 			link: {
-				name: 'shop',
+				name: t('links.shop'),
 				path: '#',
 			},
 		},
@@ -87,80 +88,79 @@ const sectionsContent = [
 
 const furnitureList = [
 	{
-		name: 'Banc',
+		name: t('furniture.bench'),
 		path: '#',
 	},
 	{
-		name: 'banquette',
+		name: t('furniture.stool'),
 		path: '#',
 	},
 	{
-		name: 'Bibliothèque',
+		name: t('furniture.library'),
 		path: '#',
 	},
 	{
-		name: 'buffet',
+		name: t('furniture.buffet'),
 		path: '#',
 	},
 	{
-		name: 'bureau',
+		name: t('furniture.desk'),
 		path: '#',
 	},
 	{
-		name: 'canapé',
+		name: t('furniture.couch'),
 		path: '#',
 	},
 	{
-		name: 'chaise',
+		name: t('furniture.chair'),
 		path: '#',
 	},
 	{
-		name: 'chaise haute',
+		name: t('furniture.high_chair'),
 		path: '#',
 	},
 	{
-		name: 'chariot bar',
+		name: t('furniture.bar_trolley'),
 		path: '#',
 	},
 	{
-		name: 'étagère',
+		name: t('furniture.shelf'),
 		path: '#',
 	},
 	{
-		name: 'fauteuil',
+		name: t('furniture.armchair'),
 		path: '#',
 	},
 	{
-		name: 'luminaire',
+		name: t('furniture.lamp'),
 		path: '#',
 	},
 	{
-		name: 'miroir',
+		name: t('furniture.mirror'),
 		path: '#',
 	},
 	{
-		name: 'paravent',
+		name: t('furniture.screen'),
 		path: '#',
 	},
 	{
-		name: 'patère et valet',
+		name: t('furniture.coat_hook_valet'),
 		path: '#',
 	},
 	{
-		name: "table basse et d'appoint",
+		name: t('furniture.coffee_side_table'),
 		path: '#',
 	},
 	{
-		name: 'table de repas',
+		name: t('furniture.dining table'),
 		path: '#',
 	},
 ];
 
 const formContent = {
-	title:
-		'Abonnez-vous à notre newsletter pour recevoir nos offres et suivre notre actualité.',
-	placeholder: 'votre adresse email',
-	button_text: "S'abonner",
+	title: t('title.form'),
+	placeholder: t('placeholder'),
+	button_text: t('btns.subscribe'),
 };
 </script>
 
