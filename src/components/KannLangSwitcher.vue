@@ -26,7 +26,6 @@ function changeLang(event) {
 	usedLang.value = newLang;
 	i18n.locale = newLang;
 	localStorage.kann_lang = newLang;
-	window.location.reload(); // решить проблему принудительной перезагрузки страницы, т.к. не меняется язык корректно без этого
 }
 </script>
 

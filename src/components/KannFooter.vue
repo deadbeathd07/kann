@@ -16,6 +16,7 @@ import KannList from './KannList.vue';
 import KannButton from './KannButton.vue';
 import KannLink from './KannLink.vue';
 import { useI18n } from 'vue-i18n';
+import { computed } from 'vue';
 
 const { t } = useI18n();
 
@@ -25,7 +26,7 @@ const props = defineProps({
 	},
 });
 
-const listSections = [
+const listSections = computed(() => [
 	{
 		title: t('footer.conception.title'),
 		menu: [
@@ -61,7 +62,7 @@ const listSections = [
 			{ name: 'Facebook', path: '#' },
 		],
 	},
-];
+]);
 </script>
 
 <style lang="scss">

@@ -5,10 +5,11 @@ import KannSection from './components/KannSection.vue';
 import KannList from './components/KannList.vue';
 import KannForm from './components/KannForm.vue';
 import { useI18n } from 'vue-i18n';
+import { computed } from 'vue';
 
 const { t } = useI18n();
 
-const sectionsContent = [
+const sectionsContent = computed(() => [
 	{
 		class: 'section--reverse',
 		img: {
@@ -84,9 +85,9 @@ const sectionsContent = [
 			},
 		},
 	},
-];
+]);
 
-const furnitureList = [
+const furnitureList = computed(() => [
 	{
 		name: t('furniture.bench'),
 		path: '#',
@@ -155,13 +156,15 @@ const furnitureList = [
 		name: t('furniture.dining table'),
 		path: '#',
 	},
-];
+]);
 
-const formContent = {
-	title: t('title.form'),
-	placeholder: t('placeholder'),
-	button_text: t('btns.subscribe'),
-};
+const formContent = computed(() => {
+	return {
+		title: t('title.form'),
+		placeholder: t('placeholder'),
+		button_text: t('btns.subscribe'),
+	};
+});
 </script>
 
 <template lang="pug">

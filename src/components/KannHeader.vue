@@ -25,17 +25,17 @@ import KannLangSwitcher from './KannLangSwitcher.vue';
 import KannSearch from './KannSearch.vue';
 import KannCart from './KannCart.vue';
 import KannLink from './KannLink.vue';
-import { ref } from 'vue';
+import { computed, ref } from 'vue';
 import { useI18n } from 'vue-i18n';
 
 const { t } = useI18n();
 
-const menu = [
+const menu = computed(() => [
 	{ name: t('header.menu.shop'), path: '#' },
 	{ name: t('header.menu.projects'), path: '#' },
 	{ name: t('header.menu.journal'), path: '#' },
 	{ name: t('header.menu.about'), path: '#' },
-];
+]);
 
 const languages = ['fr', 'en'];
 const isSmall = ref(isWindowSmall());
